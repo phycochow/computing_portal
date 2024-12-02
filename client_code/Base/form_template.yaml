@@ -37,9 +37,9 @@ components:
   properties: {}
   type: ColumnPanel
 - layout_properties: {slot: title}
-  name: label_1
+  name: rich_text_1
   properties: {}
-  type: Label
+  type: RichText
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
