@@ -36,12 +36,10 @@ components:
   name: column_panel_1
   properties: {}
   type: ColumnPanel
-- data_bindings: []
-  event_bindings: {click: button_5_click}
-  layout_properties: {slot: title}
-  name: button_5
-  properties: {align: left, bold: true, font_size: 20, text: Palpant Group}
-  type: Button
+- layout_properties: {slot: title}
+  name: label_1
+  properties: {}
+  type: Label
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
