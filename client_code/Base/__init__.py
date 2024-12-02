@@ -12,10 +12,9 @@ class Base(BaseTemplate):
         self.init_components(**properties)
         # Any code you write here will run before the form opens.
         # self.pages_dict = {'Home' : Home()}
-        
-        self.button_5.text = 'Palpant Group'
-        self.button_1.text, self.button_2.text, self.button_3.text, self.button_4.text = 'TRIAGE', 'EpiCops', 'CMPortal', 'UnTANGLeD'
-        
+
+        self.navg_buttons = [self.button_1, self.button_2, self.button_3, self.button_4]
+
         # self.content_panel.add_component(self.pages_dict['Home'])
         self.content_panel.add_component(Home())
         
@@ -23,18 +22,36 @@ class Base(BaseTemplate):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(TRIAGE())
+        for navg_button in self.navg_buttons:
+            navg_button.role = 'default'
+        self.button_1.role = 'tonal-button'
 
     def button_2_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(EpiCops())
+        for navg_button in self.navg_buttons:
+            navg_button.role = 'default'
+        self.button_2.role = 'tonal-button'
+    
 
     def button_3_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(CMPortal())
-
+        for navg_button in self.navg_buttons:
+            navg_button.role = 'default'
+        self.button_3.role = 'tonal-button'
+        
     def button_4_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(UnTANGLeD())
+        for navg_button in self.navg_buttons:
+            navg_button.role = 'default'
+        self.button_4.role = 'tonal-button'
+
+    def button_5_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.content_panel.clear()
+        self.content_panel.add_component(Home())
