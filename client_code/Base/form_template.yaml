@@ -37,8 +37,8 @@ components:
   properties: {}
   type: ColumnPanel
 - layout_properties: {slot: title}
-  name: rich_text_1
-  properties: {}
+  name: title
+  properties: {foreground: 'theme:Primary'}
   type: RichText
 container:
   properties: {html: '@theme:standard-page.html'}

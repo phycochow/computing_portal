@@ -17,6 +17,7 @@ class Base(BaseTemplate):
 
         # self.content_panel.add_component(self.pages_dict['Home'])
         self.content_panel.add_component(Home())
+        self.title.content = 'Palpant Group'
         
     def button_1_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -25,6 +26,7 @@ class Base(BaseTemplate):
         for navg_button in self.navg_buttons:
             navg_button.role = 'default'
         self.button_1.role = 'tonal-button'
+        self.title.content = 'TRIAGE'
 
     def button_2_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -33,6 +35,7 @@ class Base(BaseTemplate):
         for navg_button in self.navg_buttons:
             navg_button.role = 'default'
         self.button_2.role = 'tonal-button'
+        self.title.content = 'EpiCops'
     
 
     def button_3_click(self, **event_args):
@@ -42,6 +45,7 @@ class Base(BaseTemplate):
         for navg_button in self.navg_buttons:
             navg_button.role = 'default'
         self.button_3.role = 'tonal-button'
+        self.title.content = 'CMPortal'
         
     def button_4_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -50,6 +54,7 @@ class Base(BaseTemplate):
         for navg_button in self.navg_buttons:
             navg_button.role = 'default'
         self.button_4.role = 'tonal-button'
+        self.title.content = 'UnTANGLeD'
 
     def button_5_click(self, **event_args):
         """This method is called when the button is clicked"""
