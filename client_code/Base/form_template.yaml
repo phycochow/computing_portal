@@ -9,10 +9,28 @@ components:
   properties: {}
   type: FlowPanel
 - components:
-  - layout_properties: {grid_position: 'TSBKTJ,BTCUXZ'}
-    name: link_2
-    properties: {}
-    type: Link
+  - event_bindings: {click: button_1_click}
+    layout_properties: {grid_position: 'YVYDIK,HAADQE'}
+    name: button_1
+    properties: {text: button_1}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'AUMUJO,AEDSVM'}
+    name: button_2
+    properties: {text: button_2}
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'MDMULQ,QLXHLM'}
+    name: button_3
+    properties:
+      text: |
+        button_3
+    type: Button
+  - event_bindings: {click: button_2_click}
+    layout_properties: {grid_position: 'DOCVXZ,MGESJQ'}
+    name: button_4
+    properties: {text: button_4}
+    type: Button
   layout_properties: {slot: left-nav}
   name: column_panel_1
   properties: {}
