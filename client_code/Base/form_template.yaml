@@ -37,9 +37,9 @@ components:
   properties: {}
   type: ColumnPanel
 - layout_properties: {slot: title}
-  name: link_1
-  properties: {}
-  type: Link
+  name: button_5
+  properties: {text: button_5}
+  type: Button
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
