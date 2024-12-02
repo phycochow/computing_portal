@@ -14,7 +14,7 @@ class Base(BaseTemplate):
         # self.pages_dict = {'Home' : Home()}
         
         self.link_1.text = 'Palpant Group'
-        self.button_1.text, self.button_2.text, self.button_2.text, self.button_2.text = 'TRIAGE', 'EpiCops', 'CMPortal', 'UnTANGLeD'
+        self.button_1.text, self.button_2.text, self.button_3.text, self.button_4.text = 'TRIAGE', 'EpiCops', 'CMPortal', 'UnTANGLeD'
         
         # self.content_panel.add_component(self.pages_dict['Home'])
         self.content_panel.add_component(Home())

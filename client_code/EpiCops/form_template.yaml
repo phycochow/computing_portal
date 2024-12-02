@@ -1,7 +1,12 @@
 components:
-- layout_properties: {grid_position: 'ORMSVI,HUDZKO'}
-  name: label_1
-  properties: {text: This is EpiCop}
-  type: Label
+- components:
+  - layout_properties: {grid_position: 'MFACPA,UEMKNT'}
+    name: label_1
+    properties: {text: This is EpiCop}
+    type: Label
+  layout_properties: {grid_position: 'ZWPICZ,IBBKJY'}
+  name: column_panel_1
+  properties: {}
+  type: ColumnPanel
 container: {type: ColumnPanel}
 is_package: true
