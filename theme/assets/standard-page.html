@@ -1,50 +1,17 @@
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" rel="preload" as="font" crossorigin="anonymous">
 
-<style>
-.horizontal-nav {
-  background-color: #f1f1f1;
-  display: flex;
-  align-items: center;
-  padding: 10px 15px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 10;
-  box-sizing: border-box;
-}
-.horizontal-nav-links {
-  display: flex;
-  gap: 15px;
-  margin-left: 20px;
-}
-.horizontal-nav-links a {
-  text-decoration: none;
-  color: #333;
-}
-.structure {
-  margin-top: 50px; /* Adjust for the new horizontal nav */
-}
-</style>
-
-<div class="horizontal-nav">
-  <div>My App</div>
-  <div class="horizontal-nav-links">
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-
 <div class="structure">
   <div class="app-bar" anvil-drop-container=".anvil-container" anvil-drop-redirect=".placeholder">
     <a class="sidebar-toggle" anvil-if-slot-empty="top-left-btn" anvil-hide-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
     <a class="sidebar-toggle anvil-designer-only" anvil-if-slot-empty="top-left-btn" anvil-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn"><i class="fa fa-blank"></i></a>
     <div class="top-left-btn" anvil-slot="top-left-btn"></div>
-    <div class="title" anvil-slot="title">
-      <div class="placeholder anvil-designer-only" anvil-if-slot-empty="title" anvil-drop-here>Drop title here</div>
+    <div class="nav-holder">
+        <div class="placeholder anvil-designer-only" anvil-if-slot-empty="nav" anvil-drop-here>Drop navigation here</div>
     </div>
+    
+    <!-- <div class="title" anvil-slot="title">
+      <div class="placeholder anvil-designer-only" anvil-if-slot-empty="title" anvil-drop-here>Drop title here</div>
+    </div> -->
     <div class="app-bar-nav" anvil-slot="nav-right">
       <div class="placeholder anvil-designer-only" anvil-if-slot-empty="nav-right" anvil-drop-here>Drop a FlowPanel here</div>
     </div>
@@ -136,18 +103,18 @@
       if (window.anvilInDesigner) {
         //add left margin to content to make room for left-nav or left-nav-placeholder
         $('.content').css({'margin-left': Math.max(ln.outerWidth(), lnp.outerWidth()).toString() + 'px'});
-        $('.content').css({'margin-top': (topMargin + 50).toString() + 'px'}) // Added extra margin for horizontal nav
+        $('.content').css({'margin-top': appBar.clientHeight.toString() + 'px'})
         ln.css({'top': topMargin.toString() + 'px'})
       } else {
         //if not in Anvil designer, content gets no left margin because left-nav will be a modal overlay
         $('.content').css({'margin-left': '0px'});
         ln.css({'top': '0px'})
         //add top margin to content
-        $('.content').css({'margin-top': (topMargin + 50).toString() + 'px'}); // Added extra margin for horizontal nav
+        $('.content').css({'margin-top': topMargin.toString() + 'px'});
       }
     } else {
       //if the window is big, add margin to content and left-nav for app bar
-      $('.content').css({'margin-top': (topMargin + 50).toString() + 'px'}); // Added extra margin for horizontal nav
+      $('.content').css({'margin-top': appBar.clientHeight.toString() + 'px'});
       ln.css({'top': topMargin.toString() + 'px'})
       if (window.anvilInDesigner) {
         //if in the designer, add left margin for either the left-nav or the placeholder
