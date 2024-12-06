@@ -36,15 +36,7 @@ components:
   name: title
   properties: {foreground: 'theme:Primary'}
   type: RichText
-- components:
-  - layout_properties: {}
-    name: link_2
-    properties: {text: das}
-    type: Link
-  - layout_properties: {}
-    name: link_1
-    properties: {text: asd}
-    type: Link
+- components: []
   layout_properties: {slot: nav-right}
   name: flow_panel_1
   properties: {}
