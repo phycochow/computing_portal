@@ -430,12 +430,12 @@ color: %color:On Primary Container%;
 
 .app-bar > .sidebar-toggle { display:block; float:left;  margin-left: -61px; }
 .app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; }
-.app-bar > .title { float: left; }
-.app-bar > .title > .placeholder { outline: 1px dotted; padding-left: 16px; padding-right: 16px; margin: 8px 8px 0; display:none; }
-.app-bar > .app-bar-center { float: left; font-weight: normal; }
-.app-bar > .app-bar-center .placeholder { margin-top: 8px; padding: 0 8px; }
-.app-bar > .app-bar-nav { float: right; font-weight: normal; }
-.app-bar > .app-bar-nav .placeholder { margin-top: 8px; padding: 0 8px; }
+.app-bar > .title { float: left; margin-top: 1px}
+.app-bar > .title > .placeholder { outline: 1px dotted; padding-left: 0px; padding-right: 0px; margin: 0px 0px 0; display:none; }
+.app-bar > .app-bar-center { float: left; font-weight: normal; margin-top: -5px; margin-left: 35px;}
+.app-bar > .app-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
+.app-bar > .app-bar-nav { float: right; font-weight: normal; margin-top: 1px; }
+.app-bar > .app-bar-nav .placeholder { margin-top: 1px; padding: 8 8px; }
 .anvil-highlight .app-bar > .app-bar-nav .placeholder { outline: 1px dotted #ccc; }
 .anvil-highlight .app-bar > .title > .placeholder { display:block; }
 .anvil-highlight .app-bar > .app-bar-center .placeholder { outline: 1px dotted #ccc; }

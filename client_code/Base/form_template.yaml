@@ -5,28 +5,25 @@ components:
   properties: {col_widths: '{}'}
   type: ColumnPanel
 - components:
-  - event_bindings: {click: button_1_click}
-    layout_properties: {full_width_row: true, grid_position: 'YVYDIK,HAADQE'}
-    name: button_1
-    properties: {role: null, text: TRIAGE}
+  - event_bindings: {click: home_button_click}
+    layout_properties: {grid_position: 'GCHMAB,KPZZTV'}
+    name: home_button
+    properties:
+      text: |
+        Home
     type: Button
   - data_bindings: []
-    event_bindings: {click: button_2_click}
+    event_bindings: {click: epicops_button_click}
     layout_properties: {grid_position: 'AUMUJO,AEDSVM'}
-    name: button_2
+    name: epicops_button
     properties: {text: EpiCops}
     type: Button
-  - event_bindings: {click: button_3_click}
+  - event_bindings: {click: CMPortal_button_click}
     layout_properties: {grid_position: 'MDMULQ,QLXHLM'}
-    name: button_3
+    name: CMPortal_button
     properties:
       text: |
         CMPortal
-    type: Button
-  - event_bindings: {click: button_4_click}
-    layout_properties: {grid_position: 'DOCVXZ,MGESJQ'}
-    name: button_4
-    properties: {text: UnTANGLeD}
     type: Button
   layout_properties: {slot: left-nav}
   name: column_panel_1
@@ -36,6 +33,14 @@ components:
   name: title
   properties: {foreground: 'theme:Primary'}
   type: RichText
+- components:
+  - name: link_1
+    properties: {}
+    type: Link
+  layout_properties: {slot: nav-center}
+  name: flow_panel_1
+  properties: {}
+  type: FlowPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate

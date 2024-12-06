@@ -1,7 +1,0 @@
-components:
-- layout_properties: {grid_position: 'ORMSVI,HUDZKO'}
-  name: label_1
-  properties: {text: This is TRIAGE}
-  type: Label
-container: {type: ColumnPanel}
-is_package: true
