@@ -36,11 +36,6 @@ components:
   name: title
   properties: {foreground: 'theme:Primary'}
   type: RichText
-- components: []
-  layout_properties: {slot: nav-right}
-  name: flow_panel_1
-  properties: {}
-  type: FlowPanel
 container:
   properties: {html: '@theme:standard-page.html'}
   type: HtmlTemplate
