@@ -16,7 +16,20 @@ class Base(BaseTemplate):
 
         # self.content_panel.add_component(self.pages_dict['Home'])
         self.home_button_click()
-        
+
+    def home_button_click(self, **event_args):
+        """This method is called when the button is clicked"""
+        self.content_panel.clear()
+        self.content_panel.add_component(Home())
+        for side_button in self.side_buttons:
+            side_button.role = 'default'
+        self.home_button.role = 'tonal-button'
+        self.title.content = '**IMB Palpant Group**'
+
+        self.link_1.text = 'News'
+        self.link_2.text = 'People'
+        self.link_3.text = 'Research'
+
     def epicops_button_click(self, **event_args):
         """This method is called when the button is clicked"""
         # Update content
@@ -44,13 +57,4 @@ class Base(BaseTemplate):
         self.CMPortal_button.role = 'tonal-button'
         self.title.content = 'hiPSC-CM Benchmarking Portal'
 
-    def home_button_click(self, **event_args):
-        """This method is called when the button is clicked"""
-        self.content_panel.clear()
-        self.content_panel.add_component(Home())
-        for side_button in self.side_buttons:
-            side_button.role = 'default'
-        self.home_button.role = 'tonal-button'
-        self.title.content = 'IMB Palpant Group'
 
-        self.link_1.text = 'hPSCs'
