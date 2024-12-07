@@ -2,7 +2,7 @@ components:
 - components: []
   layout_properties: {slot: default}
   name: content_panel
-  properties: {col_widths: '{}'}
+  properties: {background: 'theme:Soft Purple', col_widths: '{}'}
   type: ColumnPanel
 - components:
   - event_bindings: {click: home_button_click}
@@ -27,7 +27,7 @@ components:
     type: Button
   layout_properties: {slot: left-nav}
   name: column_panel_1
-  properties: {}
+  properties: {background: 'theme:Lilac'}
   type: ColumnPanel
 - layout_properties: {slot: title}
   name: title
@@ -73,6 +73,6 @@ components:
   properties: {}
   type: FlowPanel
 container:
-  properties: {background: 'theme:On Primary', html: '@theme:standard-page.html'}
+  properties: {background: 'theme:Deep Purple', html: '@theme:standard-page.html'}
   type: HtmlTemplate
 is_package: true
