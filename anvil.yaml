@@ -1,5 +1,6 @@
 allow_embedding: false
 dependencies: []
+metadata: {logo_img: 'asset:Screenshot 2024-12-07 114415.png'}
 name: CodeWorks
 package_name: CodeWorks
 renamed: true
