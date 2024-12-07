@@ -101,7 +101,7 @@ body {
   font-family: Roboto, Noto, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4286;
-  color: %color:On Surface%;
+  color: %color:Black%;
   background-color: %color:Background%;
   min-height: calc(100vh - 56px)
 }
@@ -118,7 +118,7 @@ a, a:focus {
 }
 
 a:hover, a:active {
-color: %color:On Primary Container%;
+color: %color:Deep Purple%;
 }
 
 .anvil-role-display {
@@ -280,7 +280,7 @@ color: %color:On Primary Container%;
 /*   border-right: 1px solid #e0e0e0; */
   font-size: 14px;
   font-weight: 500;
-  color: %color:On Surface Variant%;
+  color: %color:Black%;
   overflow-x: hidden;
   overflow-y: auto;
   position: fixed;
@@ -350,7 +350,7 @@ color: %color:On Primary Container%;
 */
 
 .left-nav a, .left-nav .anvil-label, .left-nav .anvil-label.left_edge-icon, .left-nav .anvil-label.right_edge-icon {
-  color: %color:On Surface Variant%;
+  color: %color:Black%;
   margin: 0 -8px;
   padding: 4px 16px;
   border-radius: 100px;
@@ -366,12 +366,12 @@ color: %color:On Primary Container%;
 }
 
 .left-nav a.anvil-role-selected, .app-bar a.anvil-role-selected  {
-  background-color: %color:Secondary Container%;
-  color: %color:On Secondary Container%;
+  background-color: %color:Soft Purple%;
+  color: %color:On Soft Purple%;
 }
 
 .left-nav a.anvil-role-selected:hover, .app-bar a.anvil-role-selected:hover {
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Secondary Container%;
+  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Soft Purple%;
 }
 
 .designer .nav-holder .left-nav {
@@ -406,7 +406,7 @@ color: %color:On Primary Container%;
   line-height: 40px;
   font-size: 20px;
 
-  background-color: %color:Surface%;
+  background-color: %color:Deep Purple%;
   transition: background-color 250ms;
   -webkit-transition: background-color 250ms;
   -moz-transition: background-color 250ms;
@@ -432,9 +432,16 @@ color: %color:On Primary Container%;
 .app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; }
 .app-bar > .title { float: left; margin-top: 1px}
 .app-bar > .title > .placeholder { outline: 1px dotted; padding-left: 0px; padding-right: 0px; margin: 0px 0px 0; display:none; }
-.app-bar > .app-bar-center { float: left; font-weight: normal; margin-top: -5px; margin-left: 35px;}
+/* .app-bar > .app-bar-center { float: left; font-weight: normal; margin-top: -5px; margin-left: 35px;} */
+.app-bar > .app-bar-center {
+  position: absolute; /* Absolute positioning */
+  left: 50%; /* Move to the center horizontally */
+  transform: translateX(-50%); /* Adjust for true centering */
+  font-weight: normal;
+  margin-top: -5px;
+}
 .app-bar > .app-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
-.app-bar > .app-bar-nav { float: right; font-weight: normal; margin-top: -5px; }
+.app-bar > .app-bar-nav { float: right; font-weight: normal; margin-top: 1px; }
 .app-bar > .app-bar-nav .placeholder { margin-top: 1px; padding: 8 8px; }
 .anvil-highlight .app-bar > .app-bar-nav .placeholder { outline: 1px dotted #ccc; }
 .anvil-highlight .app-bar > .title > .placeholder { display:block; }
@@ -442,7 +449,7 @@ color: %color:On Primary Container%;
 
 .app-bar a, .app-bar .anvil-component {
   display: block;
-  color: %color:On Surface%;
+  color: %color:Soft Purple%;
   line-height: 30px;
   min-width: 30px;
   min-height: 30px;
@@ -516,13 +523,13 @@ color: %color:On Primary Container%;
   font-size: 24px;
   line-height: 32px;
   border: 0;
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 
 .modal-body {
   padding: 24px;
   font-size: 16px;
-  color: %color:On Surface Variant%;
+  color: %color:Black%;
 }
 
 .modal-footer {
@@ -547,14 +554,14 @@ body>div[data-notify="container"]>span[data-notify="title"] {
   display: block;
   font-size: 18px;
   font-weight: 500;
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 
 body>div[data-notify="container"]>span[data-notify="message"] {
   display: block;
   padding: 20px 0 0;
   font-size: 16px;
-  color: %color:On Surface Variant%;  
+  color: %color:Black%;  
 }
 
 body>div[data-notify="container"].alert-success{
@@ -582,7 +589,7 @@ body>div[data-notify="container"].alert-warning>span[data-notify="title"]{
 }
 
 button.close > span, button.close {
-  color:%color:On Background%;
+  color:%color:Black%;
   text-shadow: 0 1px 0 %color:Background%;
 }
 
@@ -640,13 +647,13 @@ button.close > span, button.close {
 
 .anvil-role-filled-button > .btn, .btn-primary, .anvil-role-filled-button.file-loader>label {
   background-color: %color:Primary%;
-  color: %color:On Primary%; 
+  color: %color:White%; 
 }
 
 .anvil-role-filled-button > .btn:hover, .btn-primary:hover, .anvil-role-filled-button.file-loader>label:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
   background: linear-gradient(0deg, %color:Light Overlay 1%, %color:Light Overlay 1%), %color:Primary%;
-  color: %color:On Primary%; 
+  color: %color:White%; 
 }
 
 .anvil-role-filled-button > .btn:focus, .btn-primary:focus, .anvil-role-filled-button > .btn:active, 
@@ -655,7 +662,7 @@ button.close > span, button.close {
 .anvil-role-filled-button.file-loader>label:active:focus
 {
   background: linear-gradient(0deg, %color:Light Overlay 2%, %color:Light Overlay 2%), %color:Primary%;
-  color: %color:On Primary%; 
+  color: %color:White%; 
 }
 
 .anvil-role-elevated-button > .btn, .anvil-role-elevated-button.file-loader>label {
@@ -678,20 +685,20 @@ button.close > span, button.close {
 }
 
 .anvil-role-tonal-button > .btn, .anvil-role-tonal-button.file-loader>label {
-  color: %color:On Secondary Container%;
-  background-color: %color:Secondary Container%;
+  color: %color:On Soft Purple%;
+  background-color: %color:Soft Purple%;
 }
 
 .anvil-role-tonal-button > .btn:focus, .anvil-role-tonal-button > .btn:active, .anvil-role-tonal-button > .btn:active:focus, 
 .anvil-role-tonal-button.file-loader>label:focus, .anvil-role-tonal-button.file-loader>label:active, .anvil-role-tonal-button.file-loader>label:focus:active {
-  background: linear-gradient(0deg, %color:Dark Overlay 2%, %color:Dark Overlay 2%), %color:Secondary Container%;
-  color: %color:On Secondary Container%;
+  background: linear-gradient(0deg, %color:Dark Overlay 2%, %color:Dark Overlay 2%), %color:Soft Purple%;
+  color: %color:On Soft Purple%;
 }
 
 .anvil-role-tonal-button > .btn:hover, .anvil-role-tonal-button.file-loader>label:hover{
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Secondary Container%;
+  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Soft Purple%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
-  color: %color:On Secondary Container%;
+  color: %color:On Soft Purple%;
 }
 
 .btn-default[disabled], .btn-default[disabled]:hover, .file-loader.anvil-disabled>label, .file-loader.anvil-disabled>label:hover {
@@ -764,16 +771,17 @@ button.close > span, button.close {
 
 /*this affects dropdowns, text boxes and text areas:*/
 input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil-datepicker input {
-  font-size: 16px;
-  line-height: 1.5;
+  font-size: 20px;
+  line-height: 1.7;
+  margin-right: 15px;
   border-radius: 4px 4px 0 0;
-  background-color: %color:Surface Variant%;
-  color: %color:On Surface Variant%;
+  background-color: %color:Deep Purple%;
+  color: %color:Soft Purple%;
   box-shadow: none;
 }
 
 .anvil-dropdown {
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .anvil-component select {
@@ -783,7 +791,7 @@ input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil
 input.anvil-component, .anvil-component select, .anvil-datepicker input, textarea.anvil-component {
   padding: 8px 16px;
   border: 0;
-  border-bottom: 1px solid %color:Outline%;
+  border-bottom: 1px solid %color:Soft Purple%;
 }
 
 .anvil-dropdown select.form-control {
@@ -804,10 +812,11 @@ input.anvil-component, .anvil-component select, .anvil-datepicker input, textare
 .anvil-dropdown form:before {
     content: "\25BC";
     position: absolute;
+    margin-top: 2px;
     right: 0;
     font-size: 80%;
     line-height: calc(1.8em + 8px);
-    color: %color:Outline%;
+    color: %color:Soft Purple%%;
     pointer-events:none;
     padding: 4px 4px;
 }
@@ -819,23 +828,23 @@ input.anvil-component.anvil-spacing-below-medium { margin-bottom: 12px; }
 input.anvil-component.anvil-spacing-below-large { margin-bottom: 20px; }
 
 input.anvil-component::-webkit-input-placeholder, textarea.anvil-component::-webkit-input-placeholder {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 input.anvil-component::-moz-placeholder, textarea.anvil-component::-moz-placeholder {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 input.anvil-component::placeholder, textarea.anvil-component::placeholder  {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 
 .app-bar input.anvil-component::-webkit-input-placeholder, .app-bar textarea.anvil-component::-webkit-input-placeholder {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 .app-bar input.anvil-component::-moz-placeholder, .app-bar textarea.anvil-component::-moz-placeholder {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 .app-bar input.anvil-component::placeholder, .app-bar textarea.anvil-component::placeholder  {
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 
 input.anvil-component:hover, input.anvil-component:focus, textarea.anvil-component:hover, textarea.anvil-component:focus, 
@@ -865,7 +874,7 @@ textarea.anvil-component.anvil-role-outlined, input.anvil-component.anvil-role-o
   background-color: transparent;
   border: 1px solid %color:Outline%;
   border-radius: 4px;
-  color: %color:On Surface%;
+  color: %color:Black%;
 }
 
 textarea.anvil-component.anvil-role-outlined:hover, textarea.anvil-component.anvil-role-outlined:focus, 
@@ -936,7 +945,7 @@ textarea.anvil-component.anvil-role-input-error, input.anvil-component.anvil-rol
   height: 15px;
   border-radius: 1px;
   background-color: %color:Surface Variant%; 
-/*   color: %color:On Surface Variant%; */
+/*   color: %color:Black%; */
 }
 
 .radio input {
@@ -972,8 +981,8 @@ input[disabled] ~ span {
 }
 
 .checkbox input:checked, .radio input:checked {
-  background-color: %color:Primary Container%;
-  color: %color:On Primary Container%;
+  background-color: %color:Soft Purple%;
+  color: %color:Deep Purple%;
 }
 
 .checkbox input:checked:before {

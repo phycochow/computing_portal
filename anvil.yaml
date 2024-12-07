@@ -1,8 +1,8 @@
 allow_embedding: false
 dependencies: []
-metadata: {logo_img: 'asset:Screenshot 2024-12-07 114415.png'}
-name: CodeWorks
-package_name: CodeWorks
+metadata: {logo_img: 'asset:Screenshot 2024-12-07 114415.png', title: PalpantWebsite}
+name: MyCodeWorks
+package_name: MyCodeWorks
 renamed: true
 runtime_options:
   client_version: '3'
