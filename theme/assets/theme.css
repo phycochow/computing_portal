@@ -595,7 +595,7 @@ button.close > span, button.close {
 /* Component: Button */
 
 .btn, .btn-default, .file-loader>label {
-  border-radius: 100px;
+  border-radius: 80px;
   font-size: 14px;
   font-weight: 500;
   padding: 10px 24px;
