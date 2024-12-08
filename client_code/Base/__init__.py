@@ -21,16 +21,17 @@ class Base(BaseTemplate):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(Home())
+
+        # Update left side bar
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.home_button.role = 'tonal-button'
 
-        self.link_1.text = 'News'
-        self.link_2.text = 'People'
-        self.link_3.text = 'Research'
-
+        # Update top navigation bar
         self.link_4.visible = False
         self.link_5.visible = False
+        self.link_6.visible = False
+        self.link_7.visible = False
 
     def epicops_button_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -44,8 +45,10 @@ class Base(BaseTemplate):
         self.epicops_button.role = 'tonal-button'
 
         # Update top navigation bar
-        # links_action_dict = {'Introduction': Tools["EpiCops"]['Intro'] }
-        # self.navg_links = [self.link_1]
+        self.link_4.visible = False
+        self.link_5.visible = False
+        self.link_6.visible = False
+        self.link_7.visible = False
     
 
     def CMPortal_button_click(self, **event_args):

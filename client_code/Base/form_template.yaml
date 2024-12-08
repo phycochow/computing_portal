@@ -38,6 +38,14 @@ components:
     name: link_5
     properties: {text: Link 5}
     type: Link
+  - layout_properties: {}
+    name: link_6
+    properties: {text: Link 6}
+    type: Link
+  - layout_properties: {}
+    name: link_7
+    properties: {text: Link 7}
+    type: Link
   layout_properties: {slot: nav-center}
   name: flow_panel_1
   properties: {}
@@ -63,17 +71,20 @@ components:
   - components: []
     layout_properties: {}
     name: title
-    properties: {content: 'IMB Palpant Group | '}
+    properties: {content: IMB Palpant Group  |}
     type: RichText
-  - name: link_1
-    properties: {text: Link 1}
+  - layout_properties: {}
+    name: link_1
+    properties: {text: News}
     type: Link
   - components: []
+    layout_properties: {}
     name: link_2
-    properties: {text: Link 2}
+    properties: {text: People}
     type: Link
-  - name: link_3
-    properties: {text: Link 3}
+  - layout_properties: {}
+    name: link_3
+    properties: {text: Research}
     type: Link
   layout_properties: {slot: nav-left}
   name: flow_panel_3
