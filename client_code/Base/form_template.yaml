@@ -29,23 +29,7 @@ components:
   name: column_panel_1
   properties: {background: ''}
   type: ColumnPanel
-- layout_properties: {slot: title}
-  name: title
-  properties: {border: '', content: Changing Title, font: '', foreground: 'theme:Primary Container'}
-  type: RichText
 - components:
-  - layout_properties: {}
-    name: link_1
-    properties: {text: Link 1}
-    type: Link
-  - layout_properties: {}
-    name: link_2
-    properties: {text: Link 2}
-    type: Link
-  - layout_properties: {}
-    name: link_3
-    properties: {text: Link 3}
-    type: Link
   - layout_properties: {}
     name: link_4
     properties: {text: Link 4}
@@ -73,6 +57,25 @@ components:
     type: DropDown
   layout_properties: {slot: nav-right}
   name: flow_panel_2
+  properties: {}
+  type: FlowPanel
+- components:
+  - components: []
+    name: title
+    properties: {content: Changing Title}
+    type: RichText
+  - name: link_1
+    properties: {text: Link 1}
+    type: Link
+  - components: []
+    name: link_2
+    properties: {text: Link 2}
+    type: Link
+  - name: link_3
+    properties: {text: Link 3}
+    type: Link
+  layout_properties: {slot: nav-left}
+  name: flow_panel_3
   properties: {}
   type: FlowPanel
 container:
