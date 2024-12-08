@@ -24,7 +24,7 @@ class Base(BaseTemplate):
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.home_button.role = 'tonal-button'
-        self.title.content = "IMB Palpant Group │ Home".ljust(27)
+        self.title.content = "IMB Palpant Group │  Home".ljust(28)
 
         self.link_1.text = 'News'
         self.link_2.text = 'People'
@@ -43,7 +43,7 @@ class Base(BaseTemplate):
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.epicops_button.role = 'tonal-button'
-        self.title.content = 'IMB Palpant Group │  EpiCops'.ljust(27)
+        self.title.content = 'IMB Palpant Group │  EpiCops'.ljust(28)
 
         # Update top navigation bar
         # links_action_dict = {'Introduction': Tools["EpiCops"]['Intro'] }
@@ -57,6 +57,6 @@ class Base(BaseTemplate):
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.CMPortal_button.role = 'tonal-button'
-        self.title.content = 'IMB Palpant Group │  CMPortal'
+        self.title.content = 'IMB Palpant Group │  CMPortal'.ljust(28)
 
 
