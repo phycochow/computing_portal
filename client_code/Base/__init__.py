@@ -24,11 +24,14 @@ class Base(BaseTemplate):
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.home_button.role = 'tonal-button'
-        self.title.content = 'IMB Palpant Group │  '
+        self.title.content = "IMB Palpant Group │ Home".ljust(27)
 
         self.link_1.text = 'News'
         self.link_2.text = 'People'
         self.link_3.text = 'Research'
+
+        self.link_4.visible = False
+        self.link_5.visible = False
 
     def epicops_button_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -40,12 +43,11 @@ class Base(BaseTemplate):
         for side_button in self.side_buttons:
             side_button.role = 'default'
         self.epicops_button.role = 'tonal-button'
-        self.title.content = 'IMB Palpant Group │  EpiCops'
+        self.title.content = 'IMB Palpant Group │  EpiCops'.ljust(27)
 
         # Update top navigation bar
         # links_action_dict = {'Introduction': Tools["EpiCops"]['Intro'] }
         # self.navg_links = [self.link_1]
-        
     
 
     def CMPortal_button_click(self, **event_args):
