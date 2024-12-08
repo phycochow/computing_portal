@@ -10,7 +10,7 @@ components:
     name: home_button
     properties:
       text: |
-        Home
+        About Us
     type: Button
   - data_bindings: []
     event_bindings: {click: epicops_button_click}

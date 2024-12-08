@@ -428,26 +428,15 @@ color: %color:Deep Purple%;
   margin-bottom: 0;
 }
 
-.app-bar > .sidebar-toggle { display:block; float:left;  margin-left: -61px; }
+.app-bar > .sidebar-toggle { display:block; float:left; margin-left: -61px; }
 .app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; }
-.app-bar > .app-bar-left { 
-  float: left; 
-  font-weight: normal; 
-  margin-top: -4px; 
-}
-
-.app-bar > .app-bar-center {
-  position: absolute; /* Absolute positioning */
-  left: 50%; /* Move to the center horizontally */
-  transform: translateX(-50%); /* Adjust for true centering */
-  font-weight: normal;
-  margin-top: -5px;
-}
+/* Replace .title styles with new app-bar styles */
+.app-bar > .new-app-bar { float: left; font-weight: bold; margin: 0 20px; color: #333; font-size: 18px; line-height: 50px; }
+.app-bar > .app-bar-center { position: absolute; left: 60%; transform: translateX(-50%); font-weight: normal; margin-top: -5px; }
 .app-bar > .app-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
 .app-bar > .app-bar-nav { float: right; font-weight: normal; margin-top: 1px; }
 .app-bar > .app-bar-nav .placeholder { margin-top: 1px; padding: 8 8px; }
 .anvil-highlight .app-bar > .app-bar-nav .placeholder { outline: 1px dotted #ccc; }
-.anvil-highlight .app-bar > .app-bar-left > .placeholder { outline: 1px dotted #ccc; }
 .anvil-highlight .app-bar > .app-bar-center .placeholder { outline: 1px dotted #ccc; }
 
 .app-bar a, .app-bar .anvil-component {
@@ -457,10 +446,6 @@ color: %color:Deep Purple%;
   min-width: 30px;
   min-height: 30px;
   margin: 5px 4px 0;
-}
-
-.app-bar .title .anvil-component {
-  margin-left: 0;
 }
 
 .app-bar input.anvil-component, .app-bar .anvil-component input {
