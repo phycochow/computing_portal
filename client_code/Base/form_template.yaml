@@ -51,14 +51,16 @@ components:
   properties: {}
   type: FlowPanel
 - components:
-  - name: drop_down_1
+  - event_bindings: {change: drop_down_1_change}
+    layout_properties: {}
+    name: drop_down_1
     properties:
       align: left
-      background: theme:Deep Purple
+      background: ''
       bold: false
       enabled: true
       font_size: 20
-      foreground: theme:Primary Container
+      foreground: ''
       items: ['More ']
       margin: [0, 0, 0, 0]
       underline: false
@@ -69,23 +71,23 @@ components:
   type: FlowPanel
 - components:
   - components: []
-    layout_properties: {}
     name: title
     properties: {content: IMB Palpant Group  |}
     type: RichText
-  - layout_properties: {}
-    name: link_1
+  - name: link_1
     properties: {text: News}
     type: Link
   - components: []
-    layout_properties: {}
     name: link_2
     properties: {text: People}
     type: Link
-  - layout_properties: {}
-    name: link_3
+  - name: link_3
     properties: {text: Research}
     type: Link
+  - layout_properties: {}
+    name: title_split
+    properties: {content: '|'}
+    type: RichText
   layout_properties: {slot: nav-left}
   name: flow_panel_3
   properties: {}

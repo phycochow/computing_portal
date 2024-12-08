@@ -45,12 +45,16 @@ class Base(BaseTemplate):
         self.epicops_button.role = 'tonal-button'
 
         # Update top navigation bar
-        self.link_4.visible = False
-        self.link_5.visible = False
-        self.link_6.visible = False
-        self.link_7.visible = False
+        self.link_4.visible = True
+        self.link_5.visible = True
+        self.link_6.visible = True
+        self.link_7.visible = True
+        
+        self.link_4.text = "Introduction"
+        self.link_5.text = "Visuals"
+        self.link_6.text = "Predictions"
+        self.link_7.text = "Clustering"
     
-
     def CMPortal_button_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
@@ -59,4 +63,17 @@ class Base(BaseTemplate):
             side_button.role = 'default'
         self.CMPortal_button.role = 'tonal-button'
 
+        # Update top navigation bar
+        self.link_4.visible = True
+        self.link_5.visible = True
+        self.link_6.visible = True
+        self.link_7.visible = True
+        
+        self.link_4.text = "Introduction"
+        self.link_5.text = "Database"
+        self.link_6.text = "Enrichments"
+        self.link_7.text = "Predictions"
 
+    def drop_down_1_change(self, **event_args):
+        """This method is called when an item is selected"""
+        pass
