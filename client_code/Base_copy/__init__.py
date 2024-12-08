@@ -1,10 +1,11 @@
-from ._anvil_designer import BaseTemplate
+from ._anvil_designer import Base_copyTemplate
 from anvil import *
 from ..Home import Home
 from ..CMPortal import CMPortal
 from ..EpiCops import EpiCops
 
-class Base(BaseTemplate):
+
+class Base_copy(Base_copyTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
@@ -12,7 +13,11 @@ class Base(BaseTemplate):
         # self.pages_dict = {'Home' : Home(), 'Epi'}
 
         self.navg_links = [self.link_1, self.link_2]
-        self.side_buttons = [self.CMPortal_button, self.epicops_button, self.home_button]
+        self.side_buttons = [
+            self.CMPortal_button,
+            self.epicops_button,
+            self.home_button,
+        ]
 
         # self.content_panel.add_component(self.pages_dict['Home'])
         self.home_button_click()
@@ -24,8 +29,8 @@ class Base(BaseTemplate):
 
         # Update left side bar
         for side_button in self.side_buttons:
-            side_button.role = 'default'
-        self.home_button.role = 'tonal-button'
+            side_button.role = "default"
+        self.home_button.role = "tonal-button"
 
         # Update top navigation bar
         self.splitter_2.visible = False
@@ -42,8 +47,8 @@ class Base(BaseTemplate):
 
         # Update left side bar
         for side_button in self.side_buttons:
-            side_button.role = 'default'
-        self.epicops_button.role = 'tonal-button'
+            side_button.role = "default"
+        self.epicops_button.role = "tonal-button"
 
         # Update top navigation bar
         self.splitter_2.visible = True
@@ -51,19 +56,19 @@ class Base(BaseTemplate):
         self.link_5.visible = True
         self.link_6.visible = True
         self.link_7.visible = True
-        
+
         self.link_4.text = "Introduction"
         self.link_5.text = "Visuals"
         self.link_6.text = "Predictions"
         self.link_7.text = "Clustering"
-    
+
     def CMPortal_button_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
         self.content_panel.add_component(CMPortal())
         for side_button in self.side_buttons:
-            side_button.role = 'default'
-        self.CMPortal_button.role = 'tonal-button'
+            side_button.role = "default"
+        self.CMPortal_button.role = "tonal-button"
 
         # Update top navigation bar
         self.splitter_2.visible = True
@@ -71,7 +76,7 @@ class Base(BaseTemplate):
         self.link_5.visible = True
         self.link_6.visible = True
         self.link_7.visible = True
-        
+
         self.link_4.text = "Introduction"
         self.link_5.text = "Database"
         self.link_6.text = "Enrichments"

@@ -114,7 +114,7 @@ body {
 
 a, a:focus {
   text-decoration: none;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
 }
 
 a:hover, a:active {
@@ -361,17 +361,17 @@ color: %color:Deep Purple%;
 }
 
 .left-nav a:hover, .app-bar a:hover, .app-bar a:active {
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
+  background: linear-gradient(0deg, %color:Normal Purple%, %color:Normal Purple%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
   opacity: 100%;
 }
 
 .left-nav a.anvil-role-selected, .app-bar a.anvil-role-selected  {
   background-color: %color:Soft Purple%;
-  color: %color:On Soft Purple%;
+  color: %color:Blood Red%;
 }
 
 .left-nav a.anvil-role-selected:hover, .app-bar a.anvil-role-selected:hover {
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Soft Purple%;
+  background: linear-gradient(0deg, %color:Blood Red%, %color:Blood Red%), %color:Deep Purple%;
 }
 
 .designer .nav-holder .left-nav {
@@ -430,25 +430,25 @@ color: %color:Deep Purple%;
 
 .app-bar > .sidebar-toggle { display:block; float:left;  margin-left: -61px; }
 .app-bar > .top-left-btn { float: left; margin-left: -60px; margin-right: -40px; }
-.app-bar > .app-bar-left { 
+.app-bar > .nav-bar-left { 
   float: left; 
   font-weight: normal; 
   margin-top: -4px; 
 }
 
-.app-bar > .app-bar-center {
+.app-bar > .nav-bar-center {
   position: absolute; /* Absolute positioning */
   left: 60%; /* Move to the center horizontally */
   transform: translateX(-50%); /* Adjust for true centering */
   font-weight: normal;
-  margin-top: 1px;
+  margin-top: -4px;
 }
-.app-bar > .app-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
-.app-bar > .app-bar-nav { float: right; font-weight: normal; margin-top: 1px; }
-.app-bar > .app-bar-nav .placeholder { margin-top: 1px; padding: 8 8px; }
-.anvil-highlight .app-bar > .app-bar-nav .placeholder { outline: 1px dotted #ccc; }
-.anvil-highlight .app-bar > .app-bar-left > .placeholder { outline: 1px dotted #ccc; }
-.anvil-highlight .app-bar > .app-bar-center .placeholder { outline: 1px dotted #ccc; }
+.app-bar > .nav-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
+.app-bar > .nav-bar-right { float: right; font-weight: normal; margin-top: 1px; }
+.app-bar > .nav-bar-right .placeholder { margin-top: 1px; padding: 8 8px; }
+.anvil-highlight .app-bar > .nav-bar-right .placeholder { outline: 1px dotted #ccc; }
+.anvil-highlight .app-bar > .nav-bar-left > .placeholder { outline: 1px dotted #ccc; }
+.anvil-highlight .app-bar > .nav-bar-center .placeholder { outline: 1px dotted #ccc; }
 
 .app-bar a, .app-bar .anvil-component {
   display: block;
@@ -474,20 +474,20 @@ color: %color:Deep Purple%;
 }
 
 /* Don't put spacing on the top-level container (eg FlowPanel) */
-.app-bar-nav > .anvil-container {
+.nav-bar-right > .anvil-container {
   margin: 0;
   padding: 0;
   min-height: 56px;
 }
 
-.anvil-highlight .app-bar-nav > .anvil-container:not(.has-components):not(a) {
+.anvil-highlight .nav-bar-right > .anvil-container:not(.has-components):not(a) {
   outline: 1px dotted #fff;
   margin-top: 8px;
   min-height: 40px;
   padding: 5px 8px;
 }
 
-.anvil-highlight .app-bar-nav > .anvil-container:not(.has-components):not(a)::after {  
+.anvil-highlight .nav-bar-right > .anvil-container:not(.has-components):not(a)::after {  
   content: "Drop Links here"
 }
 
@@ -495,7 +495,7 @@ color: %color:Deep Purple%;
 .app-bar a, .app-bar a.anvil-component {
   padding: 5px;
   margin: 8px 0 0;
-  border-radius: 20px;
+  border-radius: 7px;
 }
 
 .app-bar a .link-text {
@@ -605,7 +605,7 @@ button.close > span, button.close {
   border: 0;
   background-image: none;
   background-color: transparent;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
   text-shadow: none;
   box-shadow: none;
   -webkit-box-shadow: none;
@@ -617,7 +617,7 @@ button.close > span, button.close {
   background-color: %color:Light Overlay 1%;
   background-image: none;
   outline: none;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {
@@ -625,12 +625,12 @@ button.close > span, button.close {
   background-image: none;
   outline: none;
   box-shadow: none;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
 }
 
 
 .anvil-role-outlined-button > .btn, .anvil-role-outlined-button.file-loader>label {
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
   border: solid 1px %color:Outline%;
 }
 
@@ -641,17 +641,17 @@ button.close > span, button.close {
 .anvil-role-outlined-button > .btn:focus, .anvil-role-outlined-button > .btn:active, 
 .anvil-role-outlined-button.file-loader>label:focus, .anvil-role-outlined-button.file-loader>label:active{
   background-color: %color:Light Overlay 2%;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
 }
 
 .anvil-role-filled-button > .btn, .btn-primary, .anvil-role-filled-button.file-loader>label {
-  background-color: %color:Primary%;
+  background-color: %color:Normal Purple%;
   color: %color:White%; 
 }
 
 .anvil-role-filled-button > .btn:hover, .btn-primary:hover, .anvil-role-filled-button.file-loader>label:hover {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
-  background: linear-gradient(0deg, %color:Light Overlay 1%, %color:Light Overlay 1%), %color:Primary%;
+  background: linear-gradient(0deg, %color:Light Overlay 1%, %color:Light Overlay 1%), %color:Normal Purple%;
   color: %color:White%; 
 }
 
@@ -660,12 +660,12 @@ button.close > span, button.close {
 .anvil-role-filled-button.file-loader>label:focus, .anvil-role-filled-button.file-loader>label:active, 
 .anvil-role-filled-button.file-loader>label:active:focus
 {
-  background: linear-gradient(0deg, %color:Light Overlay 2%, %color:Light Overlay 2%), %color:Primary%;
+  background: linear-gradient(0deg, %color:Light Overlay 2%, %color:Light Overlay 2%), %color:Normal Purple%;
   color: %color:White%; 
 }
 
 .anvil-role-elevated-button > .btn, .anvil-role-elevated-button.file-loader>label {
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
   background-color: %color:Surface%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
@@ -674,7 +674,7 @@ button.close > span, button.close {
 .anvil-role-elevated-button > .btn:active:focus, .anvil-role-elevated-button.file-loader>label:focus, 
 .anvil-role-elevated-button.file-loader>label:active, .anvil-role-elevated-button.file-loader>label:active:focus {
   background: linear-gradient(0deg, %color:Light Overlay 2%, %color:Light Overlay 2%), %color:Surface%;
-  color: %color:Primary%;
+  color: %color:Normal Purple%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
@@ -695,7 +695,7 @@ button.close > span, button.close {
 }
 
 .anvil-role-tonal-button > .btn:hover, .anvil-role-tonal-button.file-loader>label:hover{
-  background: linear-gradient(0deg, %color:Dark Overlay 1%, %color:Dark Overlay 1%), %color:Soft Purple%;
+  background: linear-gradient(0deg, %color:Normal Purple%, %color:Normal Purple%), %color:Soft Purple%;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
   color: %color:On Soft Purple%;
 }
@@ -848,7 +848,7 @@ input.anvil-component::placeholder, textarea.anvil-component::placeholder  {
 
 input.anvil-component:hover, input.anvil-component:focus, textarea.anvil-component:hover, textarea.anvil-component:focus, 
 .anvil-component select:hover, .anvil-component select:focus, .anvil-datepicker input:hover, .anvil-datepicker input:focus {
-  border-bottom: 2px solid %color:Primary%;
+  border-bottom: 2px solid %color:Normal Purple%;
   padding-bottom: 7px;
   box-shadow: none;
 }
@@ -857,7 +857,7 @@ input.anvil-component:hover, input.anvil-component:focus, textarea.anvil-compone
 input.anvil-component[disabled], .anvil-component select[disabled], .anvil-datepicker input[disabled], textarea.anvil-component[disabled], 
 textarea.anvil-component.anvil-role-input-error[disabled], input.anvil-component.anvil-role-input-error[disabled], 
 .anvil-component.anvil-role-input-error select[disabled], .anvil-datepicker.anvil-role-input-error input[disabled] {
-  background-color: %color:Dark Overlay 1%;
+  background-color: %color:Normal Purple%;
   color: %color:On Disabled%;
   border-bottom: 1px solid %color:On Disabled%;
   padding-bottom: 8px;
@@ -880,7 +880,7 @@ textarea.anvil-component.anvil-role-outlined:hover, textarea.anvil-component.anv
 input.anvil-component.anvil-role-outlined:hover, input.anvil-component.anvil-role-outlined:focus,
 .anvil-component.anvil-role-outlined select:hover, .anvil-component.anvil-role-outlined select:focus,
 .anvil-datepicker.anvil-role-outlined input:hover, .anvil-datepicker.anvil-role-outlined input:focus{
-  border: 2px solid %color:Primary%;
+  border: 2px solid %color:Normal Purple%;
   padding: 7px 15px;
 }
 
@@ -902,7 +902,7 @@ textarea.anvil-component.anvil-role-outlined-error[disabled], input.anvil-compon
 }
 
 .daterangepicker td.active {
-  background: %color:Primary%;
+  background: %color:Normal Purple%;
 }
 
 .daterangepicker td.available:hover {
@@ -910,7 +910,7 @@ textarea.anvil-component.anvil-role-outlined-error[disabled], input.anvil-compon
 }
 
 .daterangepicker td.active:hover {
-  background: linear-gradient(0deg, %color:Light Overlay 1%, %color:Light Overlay 1%), %color:Primary%;
+  background: linear-gradient(0deg, %color:Light Overlay 1%, %color:Light Overlay 1%), %color:Normal Purple%;
 }
 
 .daterangepicker td.off {

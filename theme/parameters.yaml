@@ -8,7 +8,7 @@ color_scheme:
   - {color: '#8B192E', name: Blood Red}
   - {color: '#1FA145', name: Grass Green}
   - {color: '#FFB81C', name: Royal Gold}
-  - {color: '#6750A4', name: Primary}
+  - {color: '#6750A4', name: Normal Purple}
   - {color: '#EADDFF', name: Soft Purple}
   - {color: '#FFFFFF', name: White}
   - {color: '#B3261E', name: Error}

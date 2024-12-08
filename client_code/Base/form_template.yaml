@@ -1,5 +1,9 @@
 components:
-- components: []
+- components:
+  - layout_properties: {grid_position: 'VWPZKA,NMVRML'}
+    name: linear_panel_1
+    properties: {}
+    type: LinearPanel
   layout_properties: {slot: default}
   name: content_panel
   properties: {background: '', col_widths: '{}'}
@@ -42,9 +46,9 @@ components:
     name: link_6
     properties: {text: Link 6}
     type: Link
-  - layout_properties: {}
+  - layout_properties: {expand: false, width: 0}
     name: link_7
-    properties: {text: Link 7}
+    properties: {col_spacing: small, text: Link 7}
     type: Link
   layout_properties: {slot: nav-center}
   name: flow_panel_1
@@ -70,9 +74,20 @@ components:
   properties: {}
   type: FlowPanel
 - components:
+  - layout_properties: {}
+    name: link_8
+    properties: {text: IMB Palpant Group}
+    type: Link
   - components: []
-    name: title
-    properties: {content: IMB Palpant Group  |}
+    data_bindings: []
+    layout_properties: {expand: false}
+    name: splitter_1
+    properties:
+      content: '|'
+      spacing:
+        margin: [null, 0, 0, 0]
+        padding: [8, 0, 0, 16]
+      spacing_above: small
     type: RichText
   - name: link_1
     properties: {text: News}
@@ -85,14 +100,18 @@ components:
     properties: {text: Research}
     type: Link
   - layout_properties: {}
-    name: title_split
-    properties: {content: '|'}
+    name: splitter_2
+    properties:
+      content: '|'
+      spacing:
+        margin: [null, 4, null, null]
     type: RichText
   layout_properties: {slot: nav-left}
   name: flow_panel_3
   properties: {}
   type: FlowPanel
 container:
+  data_bindings: []
   properties: {background: '', html: '@theme:standard-page.html'}
   type: HtmlTemplate
 is_package: true
