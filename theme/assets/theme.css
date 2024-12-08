@@ -617,7 +617,7 @@ button.close > span, button.close {
   background-color: %color:Light Overlay 1%;
   background-image: none;
   outline: none;
-  color: %color:Normal Purple%;
+  color: %color:Blood Red%;
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {
