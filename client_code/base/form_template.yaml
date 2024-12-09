@@ -50,7 +50,7 @@ components:
   type: FlowPanel
 - components:
   - layout_properties: {}
-    name: link_8
+    name: link_1
     properties: {text: IMB Palpant Group}
     type: Link
   - components: []
@@ -64,14 +64,16 @@ components:
         padding: [8, 0, 0, 16]
       spacing_above: small
     type: RichText
-  - name: link_1
+  - layout_properties: {}
+    name: link_2
     properties: {text: News}
     type: Link
-  - components: []
-    name: link_2
+  - layout_properties: {}
+    name: link_3
     properties: {text: People}
     type: Link
-  - name: link_3
+  - layout_properties: {}
+    name: link_4
     properties: {text: Research}
     type: Link
   - layout_properties: {}
@@ -81,18 +83,17 @@ components:
       spacing:
         margin: [null, 4, null, null]
     type: RichText
-  - components: []
-    name: link_4
-    properties: {text: Link 4}
-    type: Link
   - name: link_5
-    properties: {text: Link 5}
+    properties: {}
     type: Link
   - name: link_6
-    properties: {text: Link 6}
+    properties: {}
     type: Link
   - name: link_7
-    properties: {col_spacing: small, text: Link 7}
+    properties: {}
+    type: Link
+  - name: link_8
+    properties: {}
     type: Link
   layout_properties: {slot: nav-left}
   name: flow_panel_3

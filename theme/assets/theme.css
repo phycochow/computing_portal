@@ -398,7 +398,7 @@ color: %color:Deep Purple%;
 
 /* Components: App Bar */
 .app-bar {
-  min-height: 56px;
+  min-height: 60px;
   padding: 0 16px 0 72px;
   position: fixed;
   width: 100%;
@@ -604,10 +604,13 @@ button.close > span, button.close {
 }
 
 .btn:hover,.file-loader>label:hover {
-  background-color: %color:Light Overlay 1%;
-  background-image: none;
+  background-color: transparent; /* Make the background transparent */
+  background-image: url('blood.png'); /* Reference the PNG in the same folder */
+  background-size: contain; /* Ensure the image fits within the button */
+  background-repeat: no-repeat; /* Avoid repetition */
+  background-position: center; /* Center the blood spatter */
   outline: none;
-  color: %color:Blood Red%;
+  color: #FF0000; /* Blood red text color */
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {

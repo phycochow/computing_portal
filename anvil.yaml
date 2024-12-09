@@ -1,6 +1,6 @@
 allow_embedding: false
 dependencies: []
-metadata: {logo_img: 'asset:palpantLogo.png', title: PalpantWebsite}
+metadata: {logo_img: 'asset:PalpantLogo.jpeg', title: PalpantWebsite}
 name: MyCodeWorks
 package_name: MyCodeWorks
 renamed: true
