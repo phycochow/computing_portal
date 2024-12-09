@@ -85,6 +85,7 @@ class base(baseTemplate):
 
     def update_theme(self, bar_colour):
         app_bar = document.querySelector('.app-bar')
+        app_bar = document.querySelector('.app-bar')
         
         if app_bar:
             self.test.content = 'My code works'
