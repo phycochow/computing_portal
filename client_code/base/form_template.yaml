@@ -25,6 +25,10 @@ components:
       text: |
         CMPortal
     type: Button
+  - layout_properties: {grid_position: 'LRBFWO,ZUATDN'}
+    name: test
+    properties: {content: 'Is it working?'}
+    type: RichText
   layout_properties: {slot: left-nav}
   name: column_panel_1
   properties: {background: ''}

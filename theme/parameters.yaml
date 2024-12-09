@@ -17,7 +17,6 @@ color_scheme:
   - {color: '#1C1B1F', name: Black}
   - {color: '#E7E0EC', name: Text Purple}
   - {color: '#49454E', name: On Surface Variant}
-  - {color: '#79747E', name: Outline}
   - {color: 'rgba(28, 27, 31, 0.38)', name: On Disabled}
   - {color: 'rgba(28, 27, 31, 0.12)', name: Disabled Container}
   - {color: 'rgba(255, 255, 255, 0.08)', name: Light Overlay 1}

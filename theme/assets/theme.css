@@ -604,13 +604,10 @@ button.close > span, button.close {
 }
 
 .btn:hover,.file-loader>label:hover {
-  background-color: transparent; /* Make the background transparent */
-  background-image: url('blood.png'); /* Reference the PNG in the same folder */
-  background-size: contain; /* Ensure the image fits within the button */
-  background-repeat: no-repeat; /* Avoid repetition */
-  background-position: center; /* Center the blood spatter */
+  background-color: %color:Blood Red%;
+  background-image: url('blood.png');
   outline: none;
-  color: #FF0000; /* Blood red text color */
+  color: %color:Soft Beige%;
 }
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {
@@ -624,7 +621,7 @@ button.close > span, button.close {
 
 .anvil-role-outlined-button > .btn, .anvil-role-outlined-button.file-loader>label {
   color: %color:Normal Purple%;
-  border: solid 1px %color:Outline%;
+  border: solid 1px %color:Soft Beige%;
 }
 
 .anvil-role-outlined-button > .btn:hover, .anvil-role-outlined-button.file-loader>label:hover {
@@ -721,7 +718,7 @@ button.close > span, button.close {
   overflow: hidden;
   border-radius: 12px;
   background-color: %color:Surface%;
-  border: solid 1px %color:Outline%;
+  border: solid 1px %color:Slate Grey%;
   padding: 15px;
 }
 
@@ -767,7 +764,7 @@ input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil
   line-height: 1.7;
   margin-right: 15px;
   border-radius: 4px 4px 0 0;
-  background-color: %color:Deep Purple%;
+  background-color: transparent;
   color: %color:Soft Purple%;
   box-shadow: none;
 }
@@ -864,7 +861,7 @@ textarea.anvil-component.anvil-role-input-error[disabled], input.anvil-component
 textarea.anvil-component.anvil-role-outlined, input.anvil-component.anvil-role-outlined, 
 .anvil-component.anvil-role-outlined select, .anvil-datepicker.anvil-role-outlined input {
   background-color: transparent;
-  border: 1px solid %color:Outline%;
+  border: 1px solid %color:Slate Grey%;
   border-radius: 4px;
   color: %color:Black%;
 }
@@ -1044,7 +1041,7 @@ div.plot-container.plotly svg.main-svg {
 }
 
 .plot-container.plotly .main-svg .parcoords .y-axis .axis > path.domain {
-  stroke: %color:Outline%;
+  stroke: %color:Slate Grey%;
 }
 
 .anvil-spinner {
