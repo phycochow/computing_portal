@@ -35,7 +35,7 @@ class base(baseTemplate):
         self.link_7.visible = False
         self.link_8.visible = False
 
-        self.update_theme('#3A1D5F')
+        self.update_theme(barColor='#3A1D5F')
 
     def epicops_button_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -60,6 +60,8 @@ class base(baseTemplate):
         self.link_7.text = "Predictions"
         self.link_8.text = "Clustering"
 
+        self.update_theme(barColor='#3A1D5F')
+
     
     def CMPortal_button_click(self, **event_args):
         """This method is called when the button is clicked"""
@@ -81,12 +83,25 @@ class base(baseTemplate):
         self.link_7.text = "Enrichments"
         self.link_8.text = "Predictions"
 
-        self.update_theme('#492D2B')
+        self.update_theme(barColor='#492D2B', barTextColor='#F3F2F1')
 
-    def update_theme(self, bar_colour):
-        app_bar = document.querySelector('.app-bar')
-        app_bar = document.querySelector('.app-bar')
+    def update_theme(self, barColor='#3A1D5F', barTextColor='#EADDFF'):
         
-        if app_bar:
+        top_bar = document.querySelector('.app-bar')
+        if top_bar:
+            # self.test.content = 'My code works'
+            top_bar.style.backgroundColor = barColor
+            
+        top_bar_links = document.querySelectorAll('.app-bar a')
+        if top_bar_links:
             self.test.content = 'My code works'
-            app_bar.style.backgroundColor = bar_colour
+            for link in top_bar_links:
+                link.style.color = barTextColor
+            # top_bar_text.style.backgroundColor = barTextColor
+
+        top_bar_dropdown = document.querySelectorAll('.anvil-component select')
+        for select in top_bar_dropdown:
+            select.style.color = barTextColor
+
+
+            

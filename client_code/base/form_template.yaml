@@ -55,7 +55,7 @@ components:
 - components:
   - layout_properties: {}
     name: link_1
-    properties: {text: IMB Palpant Group}
+    properties: {background: '', text: IMB Palpant Group}
     type: Link
   - components: []
     data_bindings: []
