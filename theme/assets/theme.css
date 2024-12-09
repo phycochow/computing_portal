@@ -435,20 +435,10 @@ color: %color:Deep Purple%;
   font-weight: normal; 
   margin-top: -4px; 
 }
-
-.app-bar > .nav-bar-center {
-  position: absolute; /* Absolute positioning */
-  left: 60%; /* Move to the center horizontally */
-  transform: translateX(-50%); /* Adjust for true centering */
-  font-weight: normal;
-  margin-top: -4px;
-}
-.app-bar > .nav-bar-center .placeholder { margin-top: 1px; padding: 8 8px; }
 .app-bar > .nav-bar-right { float: right; font-weight: normal; margin-top: 1px; }
 .app-bar > .nav-bar-right .placeholder { margin-top: 1px; padding: 8 8px; }
 .anvil-highlight .app-bar > .nav-bar-right .placeholder { outline: 1px dotted #ccc; }
 .anvil-highlight .app-bar > .nav-bar-left > .placeholder { outline: 1px dotted #ccc; }
-.anvil-highlight .app-bar > .nav-bar-center .placeholder { outline: 1px dotted #ccc; }
 
 .app-bar a, .app-bar .anvil-component {
   display: block;

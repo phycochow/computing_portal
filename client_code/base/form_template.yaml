@@ -1,9 +1,5 @@
 components:
-- components:
-  - layout_properties: {grid_position: 'VWPZKA,NMVRML'}
-    name: linear_panel_1
-    properties: {}
-    type: LinearPanel
+- components: []
   layout_properties: {slot: default}
   name: content_panel
   properties: {background: '', col_widths: '{}'}
@@ -33,27 +29,6 @@ components:
   name: column_panel_1
   properties: {background: ''}
   type: ColumnPanel
-- components:
-  - layout_properties: {}
-    name: link_4
-    properties: {text: Link 4}
-    type: Link
-  - layout_properties: {}
-    name: link_5
-    properties: {text: Link 5}
-    type: Link
-  - layout_properties: {}
-    name: link_6
-    properties: {text: Link 6}
-    type: Link
-  - layout_properties: {expand: false, width: 0}
-    name: link_7
-    properties: {col_spacing: small, text: Link 7}
-    type: Link
-  layout_properties: {slot: nav-center}
-  name: flow_panel_1
-  properties: {}
-  type: FlowPanel
 - components:
   - event_bindings: {change: drop_down_1_change}
     layout_properties: {}
@@ -106,6 +81,19 @@ components:
       spacing:
         margin: [null, 4, null, null]
     type: RichText
+  - components: []
+    name: link_4
+    properties: {text: Link 4}
+    type: Link
+  - name: link_5
+    properties: {text: Link 5}
+    type: Link
+  - name: link_6
+    properties: {text: Link 6}
+    type: Link
+  - name: link_7
+    properties: {col_spacing: small, text: Link 7}
+    type: Link
   layout_properties: {slot: nav-left}
   name: flow_panel_3
   properties: {}
