@@ -62,7 +62,6 @@ class base(baseTemplate):
 
         self.update_theme(barColor='#3A1D5F')
 
-    
     def CMPortal_button_click(self, **event_args):
         """This method is called when the button is clicked"""
         self.content_panel.clear()
