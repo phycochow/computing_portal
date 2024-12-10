@@ -12,7 +12,7 @@ components:
   layout_properties: {grid_position: 'DDHAWI,GRHJNW'}
   name: rich_text_1_copy
   properties:
-    content: "o\tIntroduction\n\tA brief description of the tool and EpiCops \n•\tWoo Jun to work on this\n"
+    content: "o\tIntroduction\n\tA brief description of the tool and EpiCops (Woo Jun to work on this)\n•\tA overall heatmap figure of epicop weights by tissue\n"
   type: RichText
 - components:
   - layout_properties: {grid_position: 'KCNLCW,VQXUPX'}
@@ -26,7 +26,7 @@ components:
 - layout_properties: {grid_position: 'ZWCVWS,WPOGWJ'}
   name: rich_text_1_copy_copy
   properties:
-    content: "o\tIntroduction\n\tA brief description of the tool and EpiCops \n•\tWoo Jun to work on this\n"
+    content: "\tUsers can choose an EpiCop to visualise their weights across EpiMap tissue/cell types (as side-by-side barplots)\n\tThis visualisation can be adjusted for ‘LifeStage’ or any other related metadata\n"
   type: RichText
 container: {type: ColumnPanel}
 is_package: true
