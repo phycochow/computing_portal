@@ -762,6 +762,7 @@ button.close > span, button.close {
 input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil-datepicker input {
   font-size: 20px;
   line-height: 1.7;
+  margin-top: 3px;
   margin-right: 15px;
   border-radius: 4px 4px 0 0;
   background-color: transparent;
@@ -803,13 +804,13 @@ input.anvil-component, .anvil-datepicker input, textarea.anvil-component {
 .anvil-dropdown form:before {
     content: "\25BC";
     position: absolute;
-    margin-top: 2px;
+    margin-top: 8px;
     right: 0;
     font-size: 80%;
     line-height: calc(1.8em + 8px);
     color: %color:Soft Purple%%;
     pointer-events:none;
-    padding: 4px 4px;
+    padding: 2px 6px;
 }
 
 .anvil-component select, .anvil-datepicker input { margin-bottom: 4px; }
@@ -1032,7 +1033,6 @@ input[disabled] ~ span {
 
 
 /*Plots*/
-
 div.plot-container.plotly svg.main-svg {
   border: 1px solid %color:Surface Variant%;
   border-radius: 12px;

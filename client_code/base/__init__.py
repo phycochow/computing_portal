@@ -26,7 +26,7 @@ class base(baseTemplate):
         # Update left side bar
         for side_button in self.side_buttons:
             side_button.role = 'default'
-        self.home_button.role = 'tonal-button'
+        self.home_button.role = 'elevated-button'
 
         # Update top navigation bar
         self.splitter_2.visible = True
@@ -46,7 +46,7 @@ class base(baseTemplate):
         # Update left side bar
         for side_button in self.side_buttons:
             side_button.role = 'default'
-        self.epicops_button.role = 'tonal-button'
+        self.epicops_button.role = 'elevated-button'
 
         # Update top navigation bar
         self.splitter_2.visible = True
@@ -68,7 +68,7 @@ class base(baseTemplate):
         self.content_panel.add_component(CMPortal())
         for side_button in self.side_buttons:
             side_button.role = 'default'
-        self.CMPortal_button.role = 'tonal-button'
+        self.CMPortal_button.role = 'elevated-button'
 
         # Update top navigation bar
         self.splitter_2.visible = True
@@ -101,6 +101,17 @@ class base(baseTemplate):
         top_bar_dropdown = document.querySelectorAll('.anvil-component select')
         for select in top_bar_dropdown:
             select.style.color = barTextColor
+
+    def drop_down_1_change(self, **event_args):
+        """This method is called when an item is selected"""
+        selected_item = self.drop_down_1.selected_value
+        
+        if selected_item == "home":
+            alert("You selected Home!")
+        elif selected_item == "intro":
+            alert("You selected Intro!")
+        else:
+            alert("Please make a selection.")
 
 
             
