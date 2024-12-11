@@ -775,12 +775,14 @@ input.anvil-component, textarea.anvil-component, .anvil-component select, .anvil
 
 .anvil-component select {
   font-size: inherit;
-}
-input.anvil-component, .anvil-datepicker input, textarea.anvil-component {
-/* input.anvil-component, .anvil-component select, .anvil-datepicker input, textarea.anvil-component { */
   padding: 8px 16px;
   border: 0;
-  border-bottom: 1px solid %color:Soft Purple%;
+  border-bottom: 0px solid %color:Deep Purple%;
+}
+input.anvil-component, .anvil-datepicker input, textarea.anvil-component {
+  padding: 8px 16px;
+  border: 0;
+  border-bottom: 1px solid %color:Deep Purple%;
 }
 
 .anvil-dropdown select.form-control {
@@ -836,14 +838,14 @@ input.anvil-component::placeholder, textarea.anvil-component::placeholder  {
   color: %color:Black%;
 }
 
-input.anvil-component:hover, input.anvil-component:focus, textarea.anvil-component:hover, textarea.anvil-component:focus, 
+/* input.anvil-component:hover, input.anvil-component:focus, textarea.anvil-component:hover, textarea.anvil-component:focus, 
 .anvil-component select:hover, .anvil-component select:focus, .anvil-datepicker input:hover, .anvil-datepicker input:focus {
   border-bottom: 2px solid %color:Normal Purple%;
   padding-bottom: 7px;
   box-shadow: none;
-}
+} */
 
-
+/* 
 input.anvil-component[disabled], .anvil-component select[disabled], .anvil-datepicker input[disabled], textarea.anvil-component[disabled], 
 textarea.anvil-component.anvil-role-input-error[disabled], input.anvil-component.anvil-role-input-error[disabled], 
 .anvil-component.anvil-role-input-error select[disabled], .anvil-datepicker.anvil-role-input-error input[disabled] {
@@ -851,11 +853,11 @@ textarea.anvil-component.anvil-role-input-error[disabled], input.anvil-component
   color: %color:On Disabled%;
   border-bottom: 1px solid %color:On Disabled%;
   padding-bottom: 8px;
-}
+} */
 
-.anvil-component select:hover, .anvil-component select:focus {
+/* .anvil-component select:hover, .anvil-component select:focus {
   padding-bottom: 3px;
-}
+} */
 
 /* Outlined role for text areas, text boxes, drop downs and date pickers */
 textarea.anvil-component.anvil-role-outlined, input.anvil-component.anvil-role-outlined, 
