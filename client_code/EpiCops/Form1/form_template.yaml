@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'HQXUZV,HWNZTN'}
+  name: label_1
+  properties: {text: test subpage}
+  type: Label
+container: {type: ColumnPanel}
+is_package: true
