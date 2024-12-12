@@ -869,9 +869,9 @@ textarea.anvil-component.anvil-role-outlined, input.anvil-component.anvil-role-o
   color: %color:Black%;
 }
 
-textarea.anvil-component.anvil-role-outlined:hover, textarea.anvil-component.anvil-role-outlined:focus, 
+textarea.anvil-component.anvil-role-outlined:hover, textarea.anvil-component.anvil-role-outlined:focus, textarea.anvil-component.anvil-role-outlined a:active,
 input.anvil-component.anvil-role-outlined:hover, input.anvil-component.anvil-role-outlined:focus,
-.anvil-component.anvil-role-outlined select:hover, .anvil-component.anvil-role-outlined select:focus,
+/* .anvil-component.anvil-role-outlined select:hover, .anvil-component.anvil-role-outlined select:focus, */
 .anvil-datepicker.anvil-role-outlined input:hover, .anvil-datepicker.anvil-role-outlined input:focus{
   border: 2px solid %color:Normal Purple%;
   padding: 7px 15px;
