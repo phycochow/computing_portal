@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'JTGTCG,WTSLKY'}
+  name: rich_text_1
+  properties: {content: '## Prediction runs (Collaborator/paid acess exclusive)'}
+  type: RichText
+container: {type: ColumnPanel}
+is_package: true

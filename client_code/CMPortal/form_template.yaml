@@ -1,7 +1,7 @@
 components:
-- layout_properties: {grid_position: 'ORMSVI,HUDZKO'}
-  name: label_1
-  properties: {text: This is CM}
-  type: Label
+- layout_properties: {grid_position: 'ECBVMO,DOQPDA'}
+  name: rich_text_1
+  properties: {content: '# Data Server for >300 Published hiPSC-CM Differentiation and Maturation Protocols'}
+  type: RichText
 container: {type: ColumnPanel}
 is_package: true

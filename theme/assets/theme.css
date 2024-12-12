@@ -196,12 +196,13 @@ color: %color:Deep Purple%;
 
 /* Mobile and desktop margins for content */
 .content > * > .anvil-container {
-  padding: 8px;
+  /* width: 85% !important; */
+  padding: 0px;
 }
 
 @media(min-width:991px) {
   .content > * > .anvil-container {
-    padding: 16px 24px;
+    padding: 20px 0px;
   }
 }
 
@@ -229,8 +230,8 @@ color: %color:Deep Purple%;
 /*   top: 0; */
   left: 0;
   flex-shrink: 0;
-  min-width: 240px;
-  max-width: 400px;
+  min-width: 220px;
+  max-width: 270px;
 }
 
 .nav-shield {
@@ -361,7 +362,8 @@ color: %color:Deep Purple%;
 }
 
 .left-nav a:hover, .app-bar a:hover, .app-bar a:active {
-  background: linear-gradient(0deg, %color:Normal Purple%, %color:Normal Purple%), linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
+  background: linear-gradient(0deg, var(--appbar-hover-bg, %color:Normal Purple%), var(--appbar-hover-bg, %color:Normal Purple%)), 
+              linear-gradient(0deg, %color:Primary Overlay 1%, %color:Primary Overlay 1%), %color:Background%;
   opacity: 100%;
 }
 
@@ -371,7 +373,7 @@ color: %color:Deep Purple%;
 }
 
 .left-nav a.anvil-role-selected:hover, .app-bar a.anvil-role-selected:hover {
-  background: linear-gradient(0deg, %color:Blood Red%, %color:Blood Red%), %color:Deep Purple%;
+  background: linear-gradient(45deg, %color:Blood Red%, %color:Blood Red%), %color:Deep Purple%;
 }
 
 .designer .nav-holder .left-nav {

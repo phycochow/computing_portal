@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'PSWVGK,OAOLLJ'}
+  name: rich_text_1
+  properties: {content: '# People'}
+  type: RichText
+container: {type: ColumnPanel}
+is_package: true

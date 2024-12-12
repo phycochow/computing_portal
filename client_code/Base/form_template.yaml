@@ -1,8 +1,8 @@
 components:
 - components: []
-  layout_properties: {slot: default}
+  layout_properties: {slot: ''}
   name: content_panel
-  properties: {background: '', col_widths: '{}'}
+  properties: {background: '', col_spacing: tiny, col_widths: '{}'}
   type: ColumnPanel
 - components:
   - event_bindings: {click: home_button_click}
@@ -35,8 +35,9 @@ components:
   properties: {background: ''}
   type: ColumnPanel
 - components:
-  - layout_properties: {}
-    name: link_9
+  - event_bindings: {click: link_10_click}
+    layout_properties: {}
+    name: link_10
     properties: {text: Contacts}
     type: Link
   layout_properties: {slot: nav-right}
@@ -96,6 +97,10 @@ components:
     type: Link
   - event_bindings: {click: link_8_click}
     name: link_8
+    properties: {}
+    type: Link
+  - event_bindings: {click: link_9_click}
+    name: link_9
     properties: {}
     type: Link
   layout_properties: {slot: nav-left}

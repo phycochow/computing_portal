@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'DUJMOY,XNQSQV'}
+  name: rich_text_1
+  properties: {content: '# Enrichments'}
+  type: RichText
+container: {type: ColumnPanel}
+is_package: true

@@ -1,0 +1,7 @@
+components:
+- layout_properties: {grid_position: 'WDTDAC,NHDAIX'}
+  name: rich_text_1
+  properties: {content: Visualisation EpiCop by functional annotations}
+  type: RichText
+container: {type: ColumnPanel}
+is_package: true
