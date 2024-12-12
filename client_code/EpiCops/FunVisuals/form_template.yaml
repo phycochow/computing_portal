@@ -1,7 +1,39 @@
 components:
-- layout_properties: {grid_position: 'WDTDAC,NHDAIX'}
+- components: []
+  layout_properties: {grid_position: 'HFXMIO,BHVBXI'}
   name: rich_text_1
-  properties: {content: Visualisation EpiCop by functional annotations}
+  properties: {content: '## Visualisation EpiCop by functional annotations'}
+  type: RichText
+- layout_properties: {grid_position: 'MKCMYH,VAZFEC'}
+  name: spacer_1_copy_copy
+  properties: {height: 32}
+  type: Spacer
+- layout_properties: {grid_position: 'GIBZEN,LVALMO'}
+  name: rich_text_1_copy_copy
+  properties:
+    content: "\tUsers can choose an EpiCop to visualise their weights across EpiMap tissue/cell types (as side-by-side barplots)\n\tThis visualisation can be adjusted for ‘LifeStage’ or any other related metadata\n"
+  type: RichText
+- layout_properties: {grid_position: 'GIBZEN,TVGGHO'}
+  name: image_1
+  properties: {display_mode: fill_width, height: 49.389617919921875}
+  type: Image
+- layout_properties: {grid_position: 'UBUDED,WJEYTZ'}
+  name: spacer_1_copy
+  properties: {height: 32}
+  type: Spacer
+- layout_properties: {grid_position: 'GHYKKU,LPEXQJ'}
+  name: image_2
+  properties: {display_mode: fill_width, height: 81.88311767578125}
+  type: Image
+- layout_properties: {grid_position: 'YYHPAL,GGJSNL'}
+  name: rich_text_1_copy_copy_copy_copy
+  properties:
+    content: "\t[To do] If user has a single genomic coordinate of interest, this function can link to PCGs or genomic loci sharing similar EpiCops  allows to discover novel loci sharing the EpiCops\n\tIf user has two distinct sets of genomic coordinates (e.g. heart vs brain enhancers), this function will find significantly different EpiCops and can visualise them as side-by-side barplots\n•\tWe can provide this function on the website for users\n•\tI have scripts for this but will write down it into Jupyter for you when I have more time (maybe around end of Dec). \n"
+  type: RichText
+- layout_properties: {grid_position: 'BDJMPR,LHVKZC'}
+  name: rich_text_1_copy_copy_copy
+  properties:
+    content: "\tShow EpiCop tissue specificity of a given genomic locus\n•\tSimilar to above, we can visualise continuous z-score values of tissue-specificity score in a given locus\n•\tBut also, wondering if this information can be kept away from public domain for commercial purposes as it provides more interpretability than EpiCops per se.. \n"
   type: RichText
 container: {type: ColumnPanel}
 is_package: true

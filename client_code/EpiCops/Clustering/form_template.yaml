@@ -1,11 +1,17 @@
 components:
-- layout_properties: {grid_position: 'HQXUZV,HWNZTN'}
-  name: label_1
-  properties: {text: test subpage - fun visuals}
-  type: Label
-- layout_properties: {grid_position: 'FUCZSL,QPOHEH'}
+- components: []
+  layout_properties: {grid_position: 'FUCZSL,QPOHEH'}
   name: rich_text_1
   properties: {content: '# Clustering tool'}
+  type: RichText
+- layout_properties: {grid_position: 'WUJXJL,SJYJVF'}
+  name: spacer_1_copy_copy_copy_copy_copy
+  properties: {height: 32}
+  type: Spacer
+- layout_properties: {grid_position: 'NBCXMZ,SIONLL'}
+  name: rich_text_1_copy_copy_copy_copy_copy_copy
+  properties:
+    content: "o\tRun clustering\n\t[To do] This functionality allows users to cluster a set of input genomic coordinates based on shared patterns of EpiCops, for downstream analysis\n•\tE.g. application to SNPs from GWAS data\n\tWe can provide simple visualisations (e.g. heatmap or side-by-side boxplots) for the output\n•\tThis can be done with provided input metadata (e.g. SNP effect size)\n\n"
   type: RichText
 container: {type: ColumnPanel}
 is_package: true

@@ -196,8 +196,8 @@ color: %color:Deep Purple%;
 
 /* Mobile and desktop margins for content */
 .content > * > .anvil-container {
-  /* width: 85% !important; */
-  padding: 0px;
+  width: 80% !important;
+  margin: 0 auto; /* Center the content */
 }
 
 @media(min-width:991px) {
@@ -205,6 +205,15 @@ color: %color:Deep Purple%;
     padding: 20px 0px;
   }
 }
+
+.content * * {
+  border: 1px solid maroon; /* Parent container */
+}
+
+.content * * > * {
+  border: 2px dashed magenta; /* Direct children (same level as magenta) */
+}
+
 
 .content .anvil-measure-this {
   padding-bottom: 1px; /* Prevent margin collapse messing up embedding */
