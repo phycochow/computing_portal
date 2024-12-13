@@ -206,9 +206,6 @@ color: %color:Deep Purple%;
   }
 }
 
-.content * * {
-  border: 1px solid maroon; /* Parent container */
-}
 
 .content * * > * {
   border: 2px dashed magenta; /* Direct children (same level as magenta) */
