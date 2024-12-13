@@ -6,8 +6,8 @@
 .anvil-panel-col {
   padding-bottom: 10px;
   margin-bottom: -10px;
-  padding: 0 0px !important;
-  margin: 0 !important;
+  padding: 0px !important;
+  margin: 0 0px !important;
 }
 
 .content > .placeholder {
@@ -15,7 +15,7 @@
   color: #888;
   font-size: 18px;
   outline: 1px dotted;
-  padding: 16px;
+  padding: 0px;
   text-align: center;
 }
 
@@ -195,12 +195,10 @@ color: %color:Deep Purple%;
   }
 }
 
-
 /* Mobile and desktop margins for content */
 .content > * > .anvil-container {
-  width: 80% !important;
-  max-width: none !important;
-  min-width: 100 !important;
+  width: 100% !important;
+  /* margin: 0 auto !important; /* Centers the content horizontally */ 
 }
 
 @media(min-width:991px) {
@@ -208,12 +206,6 @@ color: %color:Deep Purple%;
     padding: 20px 0px;
   }
 }
-
-.content * {
-  margin: 0 !important;   /* Remove any margins */
-  padding: 0px !important;  /* Remove any padding */
-}
-
 
 .content .anvil-measure-this {
   padding-bottom: 1px; /* Prevent margin collapse messing up embedding */
@@ -228,7 +220,6 @@ color: %color:Deep Purple%;
 }
 
 /* Desktop: Nav bar pinned */
-
 .nav-holder {
   display: flex;
   flex-direction: row;
@@ -236,7 +227,6 @@ color: %color:Deep Purple%;
 
 .nav-holder .left-nav {
   position: fixed;
-/*   top: 0; */
   left: 0;
   flex-shrink: 0;
   min-width: 220px;
@@ -248,7 +238,6 @@ color: %color:Deep Purple%;
 }
 
 /* Mobile: Nav bar is a modal overlay */
-
 @media(max-width:998px) {
   html:not(.designer) .nav-holder {
     display: block;
@@ -335,7 +324,6 @@ color: %color:Deep Purple%;
 }
 
 /* Make all the sidebar icons look nice */
-
 .left-nav .anvil-component-icon.left-icon {
   width: 0;
   margin-right: 24px;
@@ -1059,4 +1047,11 @@ div.plot-container.plotly svg.main-svg {
 
 .anvil-spinner {
     --anvil-spinner-bg: %color:Surface Variant%;
+}
+
+.content * > :nth-child(2) {
+  border: 3px solid red;
+}
+.content * * > :nth-child(2) {
+  border: 3px solid green;
 }
