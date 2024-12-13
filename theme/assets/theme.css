@@ -197,7 +197,8 @@ color: %color:Deep Purple%;
 /* Mobile and desktop margins for content */
 .content > * > .anvil-container {
   width: 80% !important;
-  margin: 0 auto; /* Center the content */
+  max-width: none !important;
+  min-width: 100 !important;
 }
 
 @media(min-width:991px) {
@@ -206,9 +207,22 @@ color: %color:Deep Purple%;
   }
 }
 
+.content * {
+  margin: 0 !important;   /* Remove any margins */
+  padding: 0px !important;  /* Remove any padding */
+}
 
-.content * * > * {
-  border: 2px dashed magenta; /* Direct children (same level as magenta) */
+.anvil-panel-col {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.col-padding {
+  border: 1px dashed red; /* Highlight padding areas */
+}
+
+.anvil-panel-section-container {
+  border: 1px dashed blue; /* Highlight containers */
 }
 
 
