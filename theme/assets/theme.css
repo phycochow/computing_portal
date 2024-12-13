@@ -6,6 +6,8 @@
 .anvil-panel-col {
   padding-bottom: 10px;
   margin-bottom: -10px;
+  padding: 0 0px !important;
+  margin: 0 !important;
 }
 
 .content > .placeholder {
@@ -210,19 +212,6 @@ color: %color:Deep Purple%;
 .content * {
   margin: 0 !important;   /* Remove any margins */
   padding: 0px !important;  /* Remove any padding */
-}
-
-.anvil-panel-col {
-  padding: 0 !important;
-  margin: 0 !important;
-}
-
-.col-padding {
-  border: 1px dashed red; /* Highlight padding areas */
-}
-
-.anvil-panel-section-container {
-  border: 1px dashed blue; /* Highlight containers */
 }
 
 
