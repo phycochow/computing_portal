@@ -91,7 +91,7 @@ class Base(BaseTemplate):
 
         # Update content
         self.content_panel.clear()
-        self.content_panel.add_component(content_page)
+        self.content_panel.add_component(content_page, full_width_row=True)
             
         # Update left side bar
         for side_button in self.side_buttons:
