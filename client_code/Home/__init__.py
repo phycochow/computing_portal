@@ -1,7 +1,8 @@
 from ._anvil_designer import HomeTemplate
 from anvil import *
+from anvil_extras import routing
 
-
+@routing.route('', title='Home', full_width_row=True)
 class Home(HomeTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
