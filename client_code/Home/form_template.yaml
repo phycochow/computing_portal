@@ -1,5 +1,5 @@
 components:
-- layout_properties: {full_width_row: false, grid_position: 'ORMSVI,HUDZKO'}
+- layout_properties: {full_width_row: true, grid_position: 'ORMSVI,HUDZKO'}
   name: label_1
   properties: {text: This is homepage}
   type: Label
