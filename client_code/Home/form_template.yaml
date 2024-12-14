@@ -1,7 +1,7 @@
 components:
-- layout_properties: {full_width_row: false, grid_position: 'ORMSVI,HUDZKO'}
+- layout_properties: {full_width_row: true, grid_position: 'ZBZSGD,GACJSY'}
   name: label_1
-  properties: {text: This is homepage}
+  properties: {text: This is homepage, underline: false}
   type: Label
 container: {type: ColumnPanel}
 is_package: true

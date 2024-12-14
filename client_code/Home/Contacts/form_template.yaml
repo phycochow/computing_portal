@@ -1,5 +1,5 @@
 components:
-- layout_properties: {grid_position: 'PSWVGK,OAOLLJ'}
+- layout_properties: {full_width_row: true, grid_position: 'PSWVGK,OAOLLJ'}
   name: rich_text_1
   properties: {content: '# Contacts'}
   type: RichText

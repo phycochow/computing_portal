@@ -105,7 +105,7 @@ components:
 - layout_properties: {slot: default}
   name: content_panel
   properties: {}
-  type: LinearPanel
+  type: GridPanel
 container:
   data_bindings: []
   properties: {background: '', html: '@theme:standard-page.html'}
