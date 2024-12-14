@@ -211,6 +211,14 @@ color: %color:Deep Purple%;
   padding-bottom: 1px; /* Prevent margin collapse messing up embedding */
 }
 
+.content > ** {
+  border: 2px dashed red; /* Highlight the direct children */
+}
+
+.content > *** {
+  border: 2px dashed red; /* Highlight the direct children */
+}
+
 /* Allow overflows to show drop shadows in ColumnPanels
    This can create unwanted scrollbars; we compensate for this at the top level with .nav-holder .content {overflow-x: hidden;}
 */
@@ -286,7 +294,6 @@ color: %color:Deep Purple%;
 /*   top: 54px; */
   height: calc(100% - 54px); /*todo: fix on mobile*/
 }
-
 
 .left-nav-placeholder {
   display: block;
@@ -394,7 +401,7 @@ color: %color:Deep Purple%;
   flex: 1;
   overflow-x: hidden;
 }
-
+/* here */
 /* Components: App Bar */
 .app-bar {
   min-height: 60px;
@@ -479,7 +486,7 @@ color: %color:Deep Purple%;
 .anvil-highlight .nav-bar-right > .anvil-container:not(.has-components):not(a)::after {  
   content: "Drop Links here"
 }
-
+/* here */
 /* Rejig margin vs padding to give links the halo */
 .app-bar a, .app-bar a.anvil-component {
   padding: 5px;
@@ -1049,9 +1056,3 @@ div.plot-container.plotly svg.main-svg {
     --anvil-spinner-bg: %color:Surface Variant%;
 }
 
-.content * > :nth-child(2) {
-  border: 3px solid red;
-}
-.content * * > :nth-child(2) {
-  border: 3px solid green;
-}
