@@ -1,7 +1,16 @@
 components:
-- layout_properties: {full_width_row: true, grid_position: 'ZBZSGD,GACJSY'}
-  name: label_1
-  properties: {text: This is homepage, underline: false}
-  type: Label
+- layout_properties: {full_width_row: true, grid_position: 'CJADMZ,NSHDBY'}
+  name: rich_text_1
+  properties: {content: '## Discovering the genetic basis of cardiovascular development and disease', font_size: null}
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'ZNQWDW,MXHEON'}
+  name: rich_text_1_copy
+  properties:
+    content: |-
+      The Palpant laboratory focuses on mechanisms controlling cardiovascular development and disease, drawing on three core themes spanning genomics, cell biology, and cardiac physiology. We are studying mechanisms controlling human pluripotent stem cell differentiation to derive functional human cell types for disease modelling and cell therapeutics, using consortium-scale data and systems biology methods to identify mechanisms controlling cell identity and function, and studying molecules discovered in Australia’s venomous flora and fauna as new drug therapeutics for cardiovascular disease.
+
+      The lab expertise covers multidisciplinary approaches involving stem cell biology, genomics, statistical genetics, bioinformatics, gene editing, drug discovery, and animal physiology. We draw on national and international clinical and industry partnerships to orient our priorities toward translational opportunities that address key areas of unmet need in clinical care and industry discovery pipelines.
+    font_size: 18
+  type: RichText
 container: {type: ColumnPanel}
 is_package: true
