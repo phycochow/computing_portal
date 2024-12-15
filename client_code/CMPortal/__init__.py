@@ -7,5 +7,5 @@ class CMPortal(CMPortalTemplate):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
         self.column_panel_1.role = "well-style"
-
+        self.column_panel_2.role = "well-style"
         # Any code you write here will run before the form opens.
