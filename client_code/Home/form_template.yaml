@@ -1,9 +1,13 @@
 components:
-- layout_properties: {full_width_row: true, grid_position: 'CJADMZ,NSHDBY'}
+- layout_properties: {full_width_row: true, grid_position: 'MJUBMB,VPZIJL CJADMZ,NSHDBY'}
   name: rich_text_1
   properties: {content: '## Discovering the genetic basis of cardiovascular development and disease', font_size: null}
   type: RichText
-- layout_properties: {full_width_row: true, grid_position: 'ZNQWDW,MXHEON'}
+- layout_properties: {grid_position: 'MJUBMB,MBDDEL'}
+  name: image_1
+  properties: {}
+  type: Image
+- layout_properties: {full_width_row: true, grid_position: 'MJUBMB,VPZIJL ZNQWDW,MXHEON'}
   name: rich_text_1_copy
   properties:
     content: |-
