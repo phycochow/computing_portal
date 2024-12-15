@@ -1,9 +1,9 @@
-from ._anvil_designer import ResearchTemplate
+from ._anvil_designer import NewsTemplate
 from anvil import *
 import anvil.server
 
 
-class Research(ResearchTemplate):
+class News(NewsTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)

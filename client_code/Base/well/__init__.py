@@ -1,11 +1,11 @@
-from ._anvil_designer import CMPortalTemplate
+from ._anvil_designer import wellTemplate
 from anvil import *
+import anvil.server
 
 
-class CMPortal(CMPortalTemplate):
+class well(wellTemplate):
     def __init__(self, **properties):
         # Set Form properties and Data Bindings.
         self.init_components(**properties)
-        self.column_panel_1.role = "well-style"
 
         # Any code you write here will run before the form opens.

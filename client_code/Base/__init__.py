@@ -4,7 +4,7 @@ from anvil.js.window import document
 
 from ..Home import Home
 from ..Home.People import People
-from ..Home.Research import Research
+from ..Home.News import News
 
 from ..EpiCops import EpiCops
 from ..EpiCops.FunVisuals import FunVisuals
@@ -118,11 +118,11 @@ class Base(BaseTemplate):
         self.refresh_navgBar(self.link_2)
 
     def link_3_click(self, **event_args):
-        self.change_content(theme="Home", content_page=People())
+        self.change_content(theme="Home", content_page=News())
         self.refresh_navgBar(self.link_3)
 
     def link_4_click(self, **event_args):
-        self.change_content(theme="Home", content_page=Research())
+        self.change_content(theme="Home", content_page=People())
         self.refresh_navgBar(self.link_4)
 
     # Dynamic links

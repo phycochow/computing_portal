@@ -59,17 +59,17 @@ components:
   - event_bindings: {click: link_2_click}
     layout_properties: {}
     name: link_2
-    properties: {text: News}
+    properties: {text: Research}
     type: Link
   - event_bindings: {click: link_3_click}
     layout_properties: {}
     name: link_3
-    properties: {text: People}
+    properties: {text: News}
     type: Link
   - event_bindings: {click: link_4_click}
     layout_properties: {}
     name: link_4
-    properties: {text: Research}
+    properties: {text: People}
     type: Link
   - layout_properties: {}
     name: splitter_2

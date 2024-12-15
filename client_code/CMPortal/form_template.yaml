@@ -1,7 +1,105 @@
 components:
-- layout_properties: {grid_position: 'ECBVMO,DOQPDA'}
+- components: []
+  layout_properties: {full_width_row: true, grid_position: 'ECBVMO,DOQPDA'}
   name: rich_text_1
-  properties: {content: '# Data Server for >300 Published hiPSC-CM Differentiation and Maturation Protocols'}
+  properties: {content: '## Data Server for >300 Published hiPSC-CM Differentiation and Maturation Protocols'}
   type: RichText
+- components:
+  - layout_properties: {full_width_row: true, grid_position: 'FYYZPP,QEKHDP'}
+    name: rich_text_2
+    properties:
+      content: |-
+        Researchers facilliate the cardiac differentiation and maturation of human stem cells (hiPSC-CMs) through 2D and 3D culture protocols for diverse applications. These include studying disease mechanisms and human genetics to developing precision drugs. However, most maturation methods are used by a few research groups and their studies' findings are often not directly comparable. There has been a lack of protocol benchmarking and consolidation of over two decades of cardiac knowledge. Our study addresses these gaps by augmenting a robust feature selection approach for protocol optimisation. Through comprehensive statistical analyses and functional validation studies, we find distinctive variable panels that influence the physiological performance of hiPSC-CMs.
+
+        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from Ewoldt et al is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research.
+      font_size: 18
+    type: RichText
+  - layout_properties: {grid_position: 'AUWYGD,ACUIVL'}
+    name: button_1
+    properties: {background: '#DCC787', text: Browse Protocols}
+    type: Button
+  - layout_properties: {grid_position: 'AUWYGD,KZLLNW'}
+    name: button_2
+    properties: {background: '#DCC787', text: Explore Findings}
+    type: Button
+  - layout_properties: {grid_position: 'AUWYGD,DLWOBG'}
+    name: button_3
+    properties: {background: '#DCC787', text: Download Datasets}
+    type: Button
+  - layout_properties: {full_width_row: true, grid_position: 'UWJXJI,LERMFR'}
+    name: rich_text_2_copy
+    properties:
+      content: |-
+        The **Palpant Group** combines expertise in stem cell biology, bioinformatics, statistical genetics, regulatory epigenetics, and machine learning to study mechanisms of cardiovascular development and disease.
+
+        For more information, contact us at: [n.palpant@uq.edu.au](mailto:n.palpant@uq.edu.au). Please see [Credits](#credits) for complete acknowledgements.
+      font_size: 18
+    type: RichText
+  data_bindings: []
+  layout_properties: {full_width_row: true, grid_position: 'TRFVZK,KCDINN'}
+  name: column_panel_1
+  properties: {background: 'theme:Sand Shade', foreground: ''}
+  type: ColumnPanel
+- layout_properties: {full_width_row: true, grid_position: 'UDYTQV,KBBJGH'}
+  name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+- components:
+  - components: []
+    layout_properties: {full_width_row: true, grid_position: 'FYYZPP,QEKHDP'}
+    name: rich_text_2_copy_2
+    properties:
+      content: |+
+        ## **About this Server**
+
+        ### What does the current dataset contain?
+
+        This study builds on work published by Ewoldt et al., systematically analysing 300 studies focusing on maturation benchmarking for ventricular cardiomyocytes. The aim is to improve protocols for the generation of hiPSC-CMs to model cardiac development and diseases. Since most protocols are exclusive to research groups and not appropriately compared, there is insufficient data to identify protocol parameters that yield the best functional outcomes.
+
+        ### Summary of Analyses
+        - We performed data mining on 314 hiPSC-CM studies, resulting in data-driven recommendations to enhance protocol optimisation for physiological maturation of hiPSC-derived cardiomyocytes.
+        - For each maturation parameter, we evaluated protocol variables, such as the cell's genetic background, to assess their impact on hiPSC-CM functional parameters.
+        - Additionally, we assessed their uniqueness, ensuring they are not technical artifacts arising from co-reporting bias in published studies.
+        - We identified 15 significant panels of protocol variables enriched for functional outcomes.
+        - Our results guided experimental validation of the outcome-affecting role of backbone media towards functional maturation and ischaemic modelling of hiPSC-CMs.
+
+        ### What are the limitations?
+        One of the key contributions of this study is its ability to overcome the near-incomparability of context-dependent hiPSC-CM protocols, revealing design-outcome associations. However, several limitations exist:
+
+        - **Ascertainment Bias**:
+          - While we have shown the dissimilarity of enrichments, they are based on the most reproduced study designs.
+          - Emerging modifications that could improve protocols might not be identified due to limited representation.
+
+
+        - **Generalisation Challenges**:
+          - It is challenging to generalise the direct biological causality of molecular variables towards functional outcomes.
+          - Some molecular variables may counteract others that inhibit maturation, and some are dependent on specific protocol variables.
+
+
+        - **Ordinal Relationships**:
+          - Tree models paired with one-hot encoding do not retain ordinal relationships between categories.
+          - The original study characteristics might be used in the same path, potentially making the enrichment a technical artifact.
+          - We account for this by introducing a novel bootstrapping-based technique to assign statistical significance.
+
+
+        - **Assay Design Differences**:
+          - The database may overlook critical differences between assay designs, such as the cellular complexity and nutrient requirements of 2D versus 3D culture models.
+          - This may lead to contradictions in enrichment for maturation and modelling.
+          - Merging 2D and 3D studies is a trade-off against the limited data size.
+
+
+        Our quantitative analysis minimises these limitations and provides confidence values for statistical assessments. We acknowledge that these results are subject to change and encourage users to upload their own protocols for comparison against similar studies.
+
+      font_size: 18
+    type: RichText
+  data_bindings: []
+  layout_properties: {full_width_row: true, grid_position: 'NYWDYG,FUGUAL'}
+  name: column_panel_1_copy
+  properties: {background: 'theme:Sand Shade', foreground: ''}
+  type: ColumnPanel
+- layout_properties: {grid_position: 'SNUNML,LTVMWL'}
+  name: spacer_2
+  properties: {height: 32}
+  type: Spacer
 container: {type: ColumnPanel}
 is_package: true

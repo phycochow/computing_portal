@@ -1,0 +1,12 @@
+components: []
+container:
+  properties:
+    html: |
+      <center style="font-style:italic; color:#f9f2ec; margin: 3em;">
+        <div class="well">
+          <div anvil-slot="default"></div>
+        </div>
+      </center>
+    role: null
+  type: HtmlTemplate
+is_package: true

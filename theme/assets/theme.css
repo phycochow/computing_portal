@@ -414,7 +414,7 @@ color: %color:Deep Purple%;
 }
 
 .app-bar.scrolled {
-  background: linear-gradient(0deg, %color:Primary Overlay 2%, %color:Primary Overlay 2%), %color:Background%;
+  background: linear-gradient(0deg, %color:Primary Overlay 2%, %color:Primary Overlay 2%), %color:Deep Purple%;
   transition: background 250ms;
   -webkit-transition: background 250ms;
   -moz-transition: background 250ms;
@@ -584,7 +584,7 @@ button.close > span, button.close {
 
 .btn, .btn-default, .file-loader>label {
   border-radius: 80px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
   padding: 10px 15px;
   min-height: 40px;
@@ -1048,3 +1048,9 @@ div.plot-container.plotly svg.main-svg {
     --anvil-spinner-bg: %color:Surface Variant%;
 }
 
+.anvil-role-well-style {
+  min-height: 20px;
+  padding: 19px;
+  background-color: #F9F2EC; /* Light gray background */
+  border-radius: 4px; /* Rounded corners */
+}
