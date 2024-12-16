@@ -58,7 +58,7 @@ components:
     name: rich_text_4
     properties:
       content: |+
-        ## **About this Server**
+        ## About this Server
 
         ### What does the current dataset contain?
 
@@ -74,23 +74,23 @@ components:
         ### What are the limitations?
         One of the key contributions of this study is its ability to overcome the near-incomparability of context-dependent hiPSC-CM protocols, revealing design-outcome associations. However, several limitations exist:
 
-        - **Ascertainment Bias**:
+        - Ascertainment Bias:
           - While we have shown the dissimilarity of enrichments, they are based on the most reproduced study designs.
           - Emerging modifications that could improve protocols might not be identified due to limited representation.
 
 
-        - **Generalisation Challenges**:
+        - Generalisation Challenges:
           - It is challenging to generalise the direct biological causality of molecular variables towards functional outcomes.
           - Some molecular variables may counteract others that inhibit maturation, and some are dependent on specific protocol variables.
 
 
-        - **Ordinal Relationships**:
+        - Ordinal Relationships:
           - Tree models paired with one-hot encoding do not retain ordinal relationships between categories.
           - The original study characteristics might be used in the same path, potentially making the enrichment a technical artifact.
           - We account for this by introducing a novel bootstrapping-based technique to assign statistical significance.
 
 
-        - **Assay Design Differences**:
+        - Assay Design Differences:
           - The database may overlook critical differences between assay designs, such as the cellular complexity and nutrient requirements of 2D versus 3D culture models.
           - This may lead to contradictions in enrichment for maturation and modelling.
           - Merging 2D and 3D studies is a trade-off against the limited data size.
