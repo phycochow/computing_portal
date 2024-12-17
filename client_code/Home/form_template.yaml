@@ -1,11 +1,22 @@
 components:
-- layout_properties: {full_width_row: true, grid_position: 'CJADMZ,NSHDBY'}
+- components: []
+  layout_properties: {full_width_row: true, grid_position: 'MENYKP,YTSFKV'}
   name: rich_text_1
   properties: {content: '# Discovering the genetic basis of cardiovascular development and disease', font_size: null}
   type: RichText
 - components:
+  - layout_properties: {col_xs: 0, row: JHJFXV, width_xs: 11}
+    name: image_1
+    properties:
+      background: theme:Deep Purple
+      display_mode: zoom_to_fill
+      height: 387.58441162109375
+      horizontal_align: right
+      margin: [13, null, null, '0']
+      source: _/theme/PalpantLogo.jpeg
+    type: Image
   - components: []
-    layout_properties: {full_width_row: true, grid_position: 'YLEEVS,SSYAMJ'}
+    layout_properties: {col_xs: 0, row: JHJFXV, width_xs: 11}
     name: rich_text_2
     properties:
       content: |-
@@ -14,20 +25,10 @@ components:
         The lab expertise covers multidisciplinary approaches involving stem cell biology, genomics, statistical genetics, bioinformatics, gene editing, drug discovery, and animal physiology. We draw on national and international, clinical and industry, partnerships to orient our priorities toward translational opportunities that address key areas of unmet need in clinical care and industry discovery pipelines.
       font_size: 18
     type: RichText
-  - layout_properties: {full_width_row: true, grid_position: 'YLEEVS,UJLVQN'}
-    name: image_1
-    properties:
-      background: theme:Deep Purple
-      display_mode: shrink_to_fit
-      height: 387.58441162109375
-      horizontal_align: right
-      margin: [13, null, null, '0']
-      source: _/theme/PalpantLogo.jpeg
-    type: Image
-  layout_properties: {full_width_row: true, grid_position: 'WLUADA,KJLNNO'}
-  name: column_panel_1
-  properties: {wrap_on: never}
-  type: ColumnPanel
+  layout_properties: {full_width_row: true, grid_position: 'XZPHAS,KJFHKR'}
+  name: grid_panel_1
+  properties: {}
+  type: GridPanel
 - layout_properties: {full_width_row: true, grid_position: 'CPTYVR,XGDYPB'}
   name: spacer_1
   properties: {height: 32}
@@ -42,7 +43,7 @@ components:
   properties: {content: 'The Palpant laboratory aims to identify the decision-making DNA elements of cells, design approaches to control cell differentiation decisions during development, and discover new approaches to control heart cell functions including development of new therapeutics for heart disease. We implement diverse wet and dry lab approaches linking genome regulation with cell function using computational bioinformatics, cell biology, gene editing, animal physiology, and drug discovery. The group is based in the Institute for Molecular Bioscience, Australia''s #1 research institute by Nature Index 2024. Outcomes from the group have led to translational impact including formation of a new UQ spinout company, Infensa Bioscience, as well as partnerships with companies in Europe, Canada, and the US. The team has expertise in pluripotent stem cell biology, cardiac muscle cells, and genomics with our publications cited 7-fold higher than the field average (Topic E 4031 FWCI of 7.37, SciVal). Our research has been featured on the ABC (including a Catalyst documentary), Newsweek, The Guardian, and The Washington Post.', font_size: 18}
   type: RichText
 - layout_properties: {full_width_row: true, grid_position: ''}
-  name: spacer_1_copy
+  name: spacer_2
   properties: {height: 32}
   type: Spacer
 - layout_properties: {full_width_row: true, grid_position: ''}
