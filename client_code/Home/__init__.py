@@ -19,6 +19,7 @@ class Home(HomeTemplate):
                                         row='row_panel',
                                         col_xs=8.5,
                                         width_xs=3.5)
-        
+
+
         
         

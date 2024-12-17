@@ -50,11 +50,25 @@ components:
   name: rich_text_5
   properties: {content: '# Research Impact', font_size: null}
   type: RichText
-- layout_properties: {full_width_row: true, grid_position: ''}
+- components: []
+  layout_properties: {full_width_row: true, grid_position: ''}
   name: rich_text_6
   properties:
     content: "***Advancing stem cells toward clinical testing***\_\nWork by Prof Palpant on iPSC genome engineering and differentiation protocols led to him receiving the 2015 Young Investigator Award from the International Society for Heart Research. This work resulted in a licensed patent (US Patent 10,612,002; 2020) on derivation of hPSCs-endothelial cells. This patent and seminal studies on regenerating the mammalian heart with iPSC-derived heart muscle (Nature\_x2) formed the basis for Sana Biotechnology (USA; USD $700M series A VC investment in 2019). Prof Palpant has an ongoing collaboration with Sana CSO Professor Charles Murry (including publications and a 2017 UQ Global Strategy and Partnership Award) to advance discoveries for commercialisation by Sana.\n\n***Genomic innovation for drug discovery***\_\nProf Palpant has been at the forefront of research into innovative genomics algorithms and sequencing methods. His work developing a computational method to identify genetic features controlling cells resulted in the Lorne Genome Millennium Science Award (2019) and led to current funded collaborations with HAYA Therapeutics (Switzerland; USD $16M series A VC investment, 2020), Merck (Germany), and ConcR (UK) resulting in >$600K in industry funding for early access to these discovery platforms.\n \n***New drug therapeutics for cardiovascular disease***\_\nProf Palpant has led development of Hi1a as a novel cardiovascular drug. These discoveries stemmed from his expertise in using human pluripotent stem cell biology and disease modelling of acquired heart disease. This work was recognised by the Cardiac Society for Australia and New Zealand Ralph Reader Prize and resulted in a provisional patent on ASIC1a-knockout iPSCs (PAT-02408-US-01). The clinical impact of this work has resulted in a UQ spinout company, Infensa Bioscience to commercialise Hi1a for clinical testing. He is scientific co-founder and on the scientific advisory board of Infensa Bioscience.\n\n***Publication Impact Metrics*** \nProf Palpant's expertise in pluripotent stem cell biology, cardiac muscle cells, and genomics has resulted in publications cited 7-fold higher than the field average (Topic E 4031 FWCI of 7.37, SciVal). His research has been featured on the ABC, Newsweek, The Guardian, and The Washington Post.\n\n***Professional Standing*** \nSince 2019, Prof Palpant has been involved in national initiatives including as co-chair of the Queensland Cardiovascular Research Network and advisory member of the Precision Medicine Flagship for the Australian Cardiovascular Alliance. His expertise is reflected in his role on the steering committee for the Australian Functional Genomics Network. Prof Palpant has given seminars and presentations throughout Australia, USA, Europe, Singapore, China, and Japan. He reviews for journals including\_*Science*, *Nature Methods*, *Cell Stem Cell*,\_and\_*JCI Insights*."
     font_size: 18
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'HJYPDN,UJMQZE'}
+  name: spacer_3
+  properties: {height: 32}
+  type: Spacer
+- components: []
+  layout_properties: {full_width_row: true, grid_position: 'BUDTWM,VMWJAK'}
+  name: rich_text_7
+  properties: {content: '# Publications', font_size: null}
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'CJPFXB,TDXSPU'}
+  name: rich_text_8
+  properties: {content: Nathan to provide file., font_size: 18}
   type: RichText
 container: {type: ColumnPanel}
 is_package: true
