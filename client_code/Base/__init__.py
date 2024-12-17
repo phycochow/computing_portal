@@ -66,10 +66,6 @@ class Base(BaseTemplate):
             for link in top_bar_links:
                 link.style.color = barTextColor
 
-        # top_bar_dropdown = document.querySelectorAll('.anvil-component select')
-        # for select in top_bar_dropdown:
-        #     select.style.color = barTextColor
-
         self.activated_theme = theme
         self.refresh_navgBar(None)
 
@@ -110,19 +106,19 @@ class Base(BaseTemplate):
             target_link.background = barActiveColor 
     
     def link_1_click(self, **event_args):
-        self.change_content(theme="Home", content_page=Home())
+        self.change_content(theme=self.activated_theme, content_page=Home())
         self.refresh_navgBar(self.link_2)
 
     def link_2_click(self, **event_args):
-        self.change_content(theme="Home", content_page=Home())
+        self.change_content(theme=self.activated_theme, content_page=Home())
         self.refresh_navgBar(self.link_2)
 
     def link_3_click(self, **event_args):
-        self.change_content(theme="Home", content_page=News())
+        self.change_content(theme=self.activated_theme, content_page=News())
         self.refresh_navgBar(self.link_3)
 
     def link_4_click(self, **event_args):
-        self.change_content(theme="Home", content_page=People())
+        self.change_content(theme=self.activated_theme, content_page=People())
         self.refresh_navgBar(self.link_4)
 
     # Dynamic links

@@ -601,12 +601,12 @@ button.close > span, button.close {
   position: relative;
 }
 
-.btn:hover,.file-loader>label:hover {
+/* .btn:hover,.file-loader>label:hover {
   background-color: %color:Blood Red%;
   background-image: url('blood.png');
   outline: none;
   color: %color:Soft Beige%;
-}
+} */
 
 .btn:active, .btn:focus, .btn:active:focus, .file-loader>label:active, .file-loader>label:focus, .file-loader>label:active:focus {
   background-color: %color:Light Overlay 2%;
@@ -1053,4 +1053,29 @@ div.plot-container.plotly svg.main-svg {
   padding: 19px;
   background-color: #F9F2EC; /* Light gray background */
   border-radius: 4px; /* Rounded corners */
+}
+
+/* Custom button class for CMPortal */
+.anvil-role-CMPortalButton {
+    background-color: %color:Gold Sand%; /* Primary blue color */
+    color: %color:Soft Beige%; /* White text */
+    border: none; /* No border */
+    border-radius: 6px; /* Slightly rounded corners */
+    padding: 10px 15px; /* Top/Bottom and Left/Right padding */
+    margin-left: 50px;
+    margin-bottom: 25px;
+    font-size: 20px; /* Medium text size */
+    cursor: pointer; /* Show hand cursor */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect */
+.anvil-role-CMPortalButton:hover, .anvil-role-CMPortalButton:active {
+    background-color: %color:Deep Sand%; /* Darker blue on hover */
+    color: %color:Soft Beige%; /* White text */
+}
+
+.anvil-role-gp-centered .row {
+    display: flex;
+    align-items: center;
 }

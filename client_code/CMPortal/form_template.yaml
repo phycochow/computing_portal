@@ -11,29 +11,32 @@ components:
       content: |-
         Researchers facilliate the cardiac differentiation and maturation of human stem cells (hiPSC-CMs) through 2D and 3D culture protocols for diverse applications. These include studying disease mechanisms and human genetics to developing precision drugs. However, most maturation methods are used by a few research groups and their studies' findings are often not directly comparable. There has been a lack of protocol benchmarking and consolidation of over two decades of cardiac knowledge. Our study addresses these gaps by augmenting a robust feature selection approach for protocol optimisation. Through comprehensive statistical analyses and functional validation studies, we find distinctive variable panels that influence the physiological performance of hiPSC-CMs.
 
-        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from Ewoldt et al. is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research.
+        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *Ewoldt et al.* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research.
       font_size: 18
     type: RichText
-  - layout_properties: {grid_position: 'AUWYGD,ACUIVL'}
-    name: button_1
-    properties: {background: '#DCC787', text: Browse Protocols}
-    type: Button
-  - layout_properties: {grid_position: 'AUWYGD,KZLLNW'}
-    name: button_2
-    properties: {background: '#DCC787', text: Explore Findings}
-    type: Button
-  - layout_properties: {grid_position: 'AUWYGD,DLWOBG'}
-    name: button_3
-    properties: {background: '#DCC787', text: Download Datasets}
-    type: Button
+  - layout_properties: {grid_position: 'AUWYGD,XQYSSH'}
+    name: link_1
+    properties: {align: center, text: Browse Protocols}
+    type: Link
+  - layout_properties: {grid_position: 'AUWYGD,LGWNYS'}
+    name: link_2
+    properties: {align: center, text: Explore Findings}
+    type: Link
+  - layout_properties: {full_width_row: false, grid_position: 'AUWYGD,AHKPTU'}
+    name: link_3
+    properties: {align: center, text: Download Datasets}
+    type: Link
   - layout_properties: {full_width_row: true, grid_position: 'UWJXJI,LERMFR'}
-    name: rich_text_2_copy
+    name: rich_text_3
     properties:
-      content: |-
+      content: |2-
+
         The **Palpant Group** combines expertise in stem cell biology, bioinformatics, statistical genetics, regulatory epigenetics, and machine learning to study mechanisms of cardiovascular development and disease.
 
         For more information, contact us at: [n.palpant@uq.edu.au](mailto:n.palpant@uq.edu.au). Please see [Credits](#credits) for complete acknowledgements.
       font_size: 18
+      spacing:
+        margin: ['4', null, null, null]
     type: RichText
   data_bindings: []
   layout_properties: {full_width_row: true, grid_position: 'TRFVZK,KCDINN'}
@@ -45,15 +48,7 @@ components:
   properties: {height: 32}
   type: Spacer
 - components:
-  - components:
-    - name: rich_text_5
-      properties:
-        content: |-
-          The **Palpant Group** combines expertise in stem cell biology, bioinformatics, statistical genetics, regulatory epigenetics, and machine learning to study mechanisms of cardiovascular development and disease.
-
-          For more information, contact us at: [n.palpant@uq.edu.au](mailto:n.palpant@uq.edu.au). Please see [Credits](#credits) for complete acknowledgements.
-        font_size: 18
-      type: RichText
+  - components: []
     layout_properties: {full_width_row: true, grid_position: 'MRGDEM,YLBQXZ'}
     name: rich_text_4
     properties:
@@ -96,7 +91,7 @@ components:
           - Merging 2D and 3D studies is a trade-off against the limited data size.
 
 
-        Our quantitative analysis minimises these limitations and provides confidence values for statistical assessments. We acknowledge that these results are subject to change and encourage users to upload their own protocols for comparison against similar studies.
+        Our quantitative analysis **minimises** these limitations and provides confidence values for statistical assessments. We acknowledge that these results are subject to change due to data availability and encourage users to upload their own protocols for database contribution and systematic comparison against similar studies.
 
       font_size: 18
     type: RichText
