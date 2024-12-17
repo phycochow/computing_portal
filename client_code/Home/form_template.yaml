@@ -5,7 +5,7 @@ components:
   type: RichText
 - components:
   - components: []
-    layout_properties: {col_xs: 0, row: SLNIKL, width_xs: 12}
+    layout_properties: {full_width_row: true, grid_position: 'YLEEVS,SSYAMJ'}
     name: rich_text_2
     properties:
       content: |-
@@ -14,12 +14,7 @@ components:
         The lab expertise covers multidisciplinary approaches involving stem cell biology, genomics, statistical genetics, bioinformatics, gene editing, drug discovery, and animal physiology. We draw on national and international, clinical and industry, partnerships to orient our priorities toward translational opportunities that address key areas of unmet need in clinical care and industry discovery pipelines.
       font_size: 18
     type: RichText
-  layout_properties: {full_width_row: true, grid_position: 'VGOCGF,ZIAAUK'}
-  name: grid_panel_1
-  properties: {}
-  type: GridPanel
-- components:
-  - layout_properties: {col_xs: 1, row: INTKDI, width_xs: 11}
+  - layout_properties: {full_width_row: true, grid_position: 'YLEEVS,UJLVQN'}
     name: image_1
     properties:
       background: theme:Deep Purple
@@ -29,10 +24,10 @@ components:
       margin: [13, null, null, '0']
       source: _/theme/PalpantLogo.jpeg
     type: Image
-  layout_properties: {full_width_row: true, grid_position: 'VGOCGF,VGPAAB'}
-  name: grid_panel_2
-  properties: {}
-  type: GridPanel
+  layout_properties: {full_width_row: true, grid_position: 'WLUADA,KJLNNO'}
+  name: column_panel_1
+  properties: {wrap_on: never}
+  type: ColumnPanel
 - layout_properties: {full_width_row: true, grid_position: 'CPTYVR,XGDYPB'}
   name: spacer_1
   properties: {height: 32}
