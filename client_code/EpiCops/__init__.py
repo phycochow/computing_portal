@@ -9,7 +9,7 @@ class EpiCops(EpiCopsTemplate):
         
         # CMPortal TopNavgBar theme
         self.navg_toggle = (True, True, True, True, True)
-        self.navg_text = ('About', 'Visuals', 'Predictions', 'Clustering', 'Store')
+        self.navg_text = ('About', 'Visuals', 'Predictions', 'Clustering', 'Store?')
         
         fig1 = anvil.server.call('create_plots')
         self.image_1.source = fig1
