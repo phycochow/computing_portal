@@ -11,15 +11,16 @@ components:
     type: RichText
   - layout_properties: {grid_position: 'GIZVQT,UTJOFW'}
     name: tabs_1
-    properties: {}
+    properties:
+      tab_titles: [Tab 1, Tab 2, Tab 3, '4']
     type: form:dep_p2ltx8e941xwup:Tabs
-  - layout_properties: {grid_position: 'GIZVQT,TKQJOA'}
+  - layout_properties: {grid_position: 'NXVGQR,SUJNJC'}
     name: column_panel_2
     properties: {}
     type: ColumnPanel
   layout_properties: {grid_position: 'HLDKWZ,NRFJJM'}
   name: column_panel_1
-  properties: {background: 'theme:Sand Shade', col_widths: '{"UTJOFW":40,"TKQJOA":20}'}
+  properties: {background: 'theme:Sand Shade', col_widths: '{"UTJOFW":40}'}
   type: ColumnPanel
 container: {type: ColumnPanel}
 is_package: true
