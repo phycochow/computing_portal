@@ -1,23 +1,47 @@
 components:
-- components: []
-  layout_properties: {full_width_row: true, grid_position: 'ZWPICZ,HCDGNV'}
-  name: rich_text_1
-  properties: {content: '# Epigenetically Co-modulated Patterns'}
-  type: RichText
-- layout_properties: {full_width_row: true, grid_position: 'YDAITB,NTWDIW'}
-  name: spacer_1
-  properties: {height: 32}
-  type: Spacer
-- components: []
-  layout_properties: {full_width_row: true, grid_position: 'DDHAWI,GRHJNW'}
-  name: rich_text_1_copy
-  properties:
-    content: "o\tIntroduction\n## A brief description of the tool and EpiCops (Woo Jun to work on this)\n•\tA overall heatmap figure of epicop weights by tissue OR use the summary slidedeck - ChrisC\n"
-  type: RichText
-- layout_properties: {full_width_row: true, grid_position: 'ZUPDFS,XKSPCL'}
+- layout_properties: {grid_position: 'OYGPLP,EGUJKC'}
   name: image_1
   properties: {display_mode: fill_width, height: 81.88311767578125}
   type: Image
+- layout_properties: {grid_position: 'HCHUHO,TCPYBV'}
+  name: rich_text_1_copy_3_copy
+  properties:
+    align: left
+    content: "Epigenetically Co-modulated Patterns (EpiCops) are unique chromatin state patterns observed across a wide variety of human tissues and cell types. These patterns are genome-wide, low-dimensional representations of chromatin states, derived from seven key histone modifications (H3K4me1, H3K4me3, H3K27me3, H3K27ac, H3K9me3, H3K9ac, and H3K36me3) and DNase I hypersensitivity (highlighting open chromatin regions). The source data, encompassing 833 distinct tissue and cell types sourced from the EpiMap Epigenomic Consortium, offer a comprehensive view of chromatin dynamics under different biological conditions.\n\nTo identify these patterns, we employed a machine-learning (ML), feature extraction method based on the Restricted Boltzmann Machine (RBM) model for its interpretability. This resulted in 720 epigenetic patterns that can be linked back to the original EpiMap annotations in a straightforward manner, exceeding most black-box ML methods. \n\nEpiCops effectively capture genomic information that are biologically relevant. Our findings show their connections to a broad range of biological processes and disease pathways. EpiCops can identify regulatory elements with key insights into the genetic architecture underlying cell identity and disease mechanisms. These insights are invaluable for pinpointing therapeutic targets and developing a genetic explanation for the molecular cause of complex diseases. Together, EpiCops acts as a powerful tool for understanding the cellular and disease states in an unsupervised manner.\n\n(•\tNote to self A overall heatmap figure of epicop weights by tissue OR use the summary slidedeck - ChrisC)"
+  type: RichText
+- layout_properties: {grid_position: 'AMCVBZ,YDKDEK'}
+  name: spacer_1_copy
+  properties: {height: 32}
+  type: Spacer
+- components: []
+  layout_properties: {full_width_row: true, grid_position: 'ZWPICZ,HCDGNV'}
+  name: rich_text_1
+  properties: {content: '## Epigenetics - But Why?'}
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'JYCSCY,GQWJPB'}
+  name: rich_text_1_copy_2
+  properties:
+    content: |
+      Studying transcriptional control is required to understand the cellular mechanisms that regulate diseases and phenotypes. While RNA expression data are commonly used for exploring transcriptional activity, they fall short when it comes to fully capturing the intricate regulatory mechanisms behind cellular phenotypes and diseases. For example, technical limitations such as the shallow sequencing depth presents challenges to detect novel regulatory elements and potential therapeutic targets transcribed at low quantities. Additionally, the data interpretation is further complicated by the spontaneous dynamics of changing expression conditions and cofounding technical noise that masks meaningful signals.
+
+      In comparison, epigenetic data robustly captures the key, overarching rules of transcriptional control. It sheds light on dynamic changes in regulatory elements during development, differentiation, or in response to environmental signals by revealing regulatory networks. This makes epigenetic data a more powerful data resource for revealing how cellular phenotypes and diseases are determined. By examining the epigenetic landscape, researchers can gain a clearer and deeper understanding of the regulatory networks at play, enabling the identification of novel elements and pathways that drive cellular behaviour and disease processes. What makes epigenetics particularly exciting is the reversibility of these modifications. Our ability to target and manipulate the epigenome could transform how we approach disease intervention and therapeutic development, which opens doors to innovative treatments and precision medicine.
+  type: RichText
+- layout_properties: {grid_position: 'TGYZEN,BGJEEW'}
+  name: spacer_1
+  properties: {height: 32}
+  type: Spacer
+- layout_properties: {full_width_row: true, grid_position: 'JCHOKY,HTETGB'}
+  name: rich_text_1_copy_3_copy_2
+  properties: {content: '## EpiCops Can Help With Analysing Your Data'}
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'RDZPDZ,BSFRAE'}
+  name: rich_text_1_copy_3_copy_copy
+  properties:
+    content: |
+      EpiCops are biologically meaningful representations of eight chromatin states, making them versatile tools for a wide range of biological analyses. These multivariate epigenomic patterns can be applied to various contexts, including cell development, differentiation, and disease process. By serving as informative input features, EpiCops can be used to train machine learning models to profile the epigenetic signals for any genomic loci of interest. This versatile capability enables the discovery of novel genomic loci that share similar epigenetic patterns of known functional regions.
+
+      EpiCops can also be utilised to cluster genomic loci of interest, helping to identify distinct functional groups. We have demonstrated their utility in uncovering variant clusters associated with sub-disease phenotypes in conditions such as type-2 diabetes, asthma, and other diseases. Additionally, EpiCops can be applied to refine the prediction of polygenic risk score (PRS) to enhance the accuracy of disease risk prediction. This advancement supports better patient stratification for optimal treatment options and the discovery of therapeutic targets, underscoring the transformative potential of EpiCops in genomics and precision medicine.
+  type: RichText
 - layout_properties: {full_width_row: true, grid_position: 'STWKQA,LTYGSL'}
   name: spacer_2
   properties: {height: 32}
