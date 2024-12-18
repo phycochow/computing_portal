@@ -14,15 +14,18 @@ components:
         The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *Ewoldt et al.* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research.
       font_size: 18
     type: RichText
-  - layout_properties: {grid_position: 'AUWYGD,XQYSSH'}
+  - event_bindings: {click: browseProtocol_click}
+    layout_properties: {grid_position: 'AUWYGD,XQYSSH'}
     name: link_1
     properties: {align: center, text: Browse Protocols}
     type: Link
-  - layout_properties: {grid_position: 'AUWYGD,LGWNYS'}
+  - event_bindings: {click: exploreFindings_click}
+    layout_properties: {grid_position: 'AUWYGD,LGWNYS'}
     name: link_2
     properties: {align: center, text: Explore Findings}
     type: Link
-  - layout_properties: {full_width_row: false, grid_position: 'AUWYGD,AHKPTU'}
+  - event_bindings: {click: downloadData_click}
+    layout_properties: {full_width_row: false, grid_position: 'AUWYGD,AHKPTU'}
     name: link_3
     properties: {align: center, text: Download Datasets}
     type: Link

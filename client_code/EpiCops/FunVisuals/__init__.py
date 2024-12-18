@@ -4,9 +4,13 @@ import anvil.server
 
 
 class FunVisuals(FunVisualsTemplate):
-    def __init__(self, **properties):
-        # Set Form properties and Data Bindings.
+    def __init__(self, base, **properties):
+        self.base = base
         self.init_components(**properties)
+        
+        # CMPortal TopNavgBar theme
+        self.navg_toggle = (True, True, True, True, True)
+        self.navg_text = ('About', 'Visuals', 'Predictions', 'Clustering', 'Store')
         
         fig1 = anvil.server.call('create_plots')
         self.image_1.source = fig1

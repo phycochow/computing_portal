@@ -4,9 +4,14 @@ from anvil.js.window import jQuery
 import anvil.js.window
 
 class Home(HomeTemplate):
-    def __init__(self, **properties):
-        # Set Form properties and Data Bindings.
+    def __init__(self, base, **properties):
+        self.base = base
         self.init_components(**properties)
+        
+        # This is preset, but we can set change_content() to TopNavgUpdate=False if not Home theme
+        self.navg_toggle = (False, False, False, False, False)
+        self.navg_text = ('', '', '', '', '')
+        
         # Any code you write here will run before the form opens.
         text = self.rich_text_2
         
