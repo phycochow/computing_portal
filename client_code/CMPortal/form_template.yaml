@@ -11,7 +11,7 @@ components:
       content: |-
         Researchers facilliate the cardiomyocyte differentiation and maturation of human stem cells (hiPSC-CMs) through 2D and 3D culture protocols for diverse applications. These include studying disease mechanisms and human genetics to developing precision drugs. However, most maturation methods are used by a few research groups and their studies' findings are often not directly comparable. There has been a lack of protocol benchmarking and consolidation of over two decades of cardiac knowledge. Our study addresses these gaps by augmenting a robust feature selection approach for protocol optimisation. Through comprehensive statistical analyses and functional validation studies, we find distinctive variable panels that influence the physiological performance of hiPSC-CMs.
 
-        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *[Ewoldt et al.](10.1038/s41592-024-02480-7)* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research. Note to self
+        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *[Ewoldt et al.](10.1038/s41592-024-02480-7)* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh).
       font_size: 18
     type: RichText
   - event_bindings: {click: browseProtocol_click}
