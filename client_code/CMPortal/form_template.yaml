@@ -11,7 +11,7 @@ components:
       content: |-
         Researchers facilliate the cardiomyocyte differentiation and maturation of human stem cells (hiPSC-CMs) through 2D and 3D culture protocols for diverse applications. These include studying disease mechanisms and human genetics to developing precision drugs. However, most maturation methods are used by a few research groups and their studies' findings are often not directly comparable. There has been a lack of protocol benchmarking and consolidation of over two decades of cardiac knowledge. Our study addresses these gaps by augmenting a robust feature selection approach for protocol optimisation. Through comprehensive statistical analyses and functional validation studies, we find distinctive variable panels that influence the physiological performance of hiPSC-CMs.
 
-        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *Ewoldt et al.* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research.
+        The preprint is publicly available at [https://doi.org/10.1101/2024.09.04.611313](https://doi.org/10.1101/2024.09.04.611313). The background data from *[Ewoldt et al.](10.1038/s41592-024-02480-7)* is available at [https://doi.org/10.5061/dryad.ksn02v7bh](https://doi.org/10.5061/dryad.ksn02v7bh). This arised from an honours project. Click button to view our research. Note to self
       font_size: 18
     type: RichText
   - event_bindings: {click: browseProtocol_click}
@@ -34,7 +34,7 @@ components:
     properties:
       content: |2-
 
-        The **Palpant Group** combines expertise in stem cell biology, bioinformatics, statistical genetics, regulatory epigenetics, and machine learning to study mechanisms of cardiovascular development and disease.
+        The Palpant Group combines expertise in stem cell biology, bioinformatics, statistical genetics, regulatory epigenetics, and machine learning to study mechanisms of cardiovascular development and disease.
 
         For more information, contact us at: [n.palpant@uq.edu.au](mailto:n.palpant@uq.edu.au). Please see [Credits](#credits) for complete acknowledgements.
       font_size: 18
@@ -60,7 +60,7 @@ components:
 
         ### What does the current dataset contain?
 
-        This study builds on work published by Ewoldt et al., systematically analysing 300 studies focusing on maturation benchmarking for ventricular cardiomyocytes. The aim is to improve protocols for the generation of hiPSC-CMs to model cardiac development and diseases. Since most maturation protocols are developed internally in research groups and not appropriately cross-compared, there is insufficient data to identify protocol parameters that yield the best functional outcomes.
+        This study builds on work published by *[Ewoldt et al.](10.1038/s41592-024-02480-7)*, systematically analysing 300 studies focusing on maturation benchmarking for ventricular cardiomyocytes. The aim is to improve protocols for the generation of hiPSC-CMs to model cardiac development and diseases. Since most maturation protocols are developed internally in research groups and not appropriately cross-compared, there is insufficient data to identify protocol parameters that yield the best functional outcomes.
 
         ### Summary of Analyses
         - We performed data mining on 314 hiPSC-CM studies, resulting in data-driven recommendations to enhance protocol optimisation for physiological maturation of hiPSC-derived cardiomyocytes.
@@ -113,7 +113,7 @@ components:
     name: rich_text_6
     properties:
       content: |
-        ## **Methods**
+        ## Methods
 
         ### 1. Database Expansion
 
@@ -129,15 +129,19 @@ components:
 
         ### 4. Feature Importance Analysis
 
-        One-hot encoding was applied to all categorised features. This is the ket step that takes advantage of informative missingness, which assumes that the absence of a protocol variable is an intentional decision that may impact a functional outcome. This encoding approach expanded the original database to encompass 314 published protocols and 441 features.
+        We evaluated feature importance for 15 physiological maturation parameters of hiPSC-CM using Shannon Entropy (for information gain) and Gini Impurity (to assess the likelihood of misclassification after feature-based splitting). From our preliminary analyses, the binary enrichments using different hyperparameters are correlated. Therefore, default random forest models from the Sklearn package were utilised for the analysis.
+
+        The full set of studies, given they have reported values for the functional outcome, is used for model fitting due to the limited sample size. The aim was to ultilise the calculation packages instead of training an accurate, predictive model.
 
         ### 5. Null Distribution Construction
 
-        One-hot encoding was applied to all categorised features. This is the ket step that takes advantage of informative missingness, which assumes that the absence of a protocol variable is an intentional decision that may impact a functional outcome. This encoding approach expanded the original database to encompass 314 published protocols and 441 features.
+        To assess the reliability of the enrichments, we generate a set of 2000 stochastic datasets by permuting the exisiting values for each protocol feature to form null distributions for Shannon Entropy and Gini Impurity metrics. These were evaluated across 15 functional outcomes using a one-tailed bootstrapping approach.
 
         ### 6. Jaccard Index Analysis
 
-        One-hot encoding was applied to all categorised features. This is the ket step that takes advantage of informative missingness, which assumes that the absence of a protocol variable is an intentional decision that may impact a functional outcome. This encoding approach expanded the original database to encompass 314 published protocols and 441 features.
+        A Jaccard Index analysis was conducted to determine whether limited protocol sampling dilutes biologically relevant feature enrichment. This similarity analysis aims to assess if the enrichments are technical artifacts of data processing due to co-reporting of protocol variables from e.g. high contractility studies. The analysis confirmed that Boolean features in the updated database remained highly unique, as indicated by the results.
+
+        Additionally, we show that the reduction in enrichments by imposing the statistical significance still retains the uniqueness by having an average fold-change reduction of >0.1. A Jaccard distance analysis was employed to evaluate dissimilarity between significantly enriched protocol parameters and random feature sets.
 
         ### 7. Statistical Summary
 
