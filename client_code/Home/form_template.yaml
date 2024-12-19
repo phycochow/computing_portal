@@ -19,14 +19,14 @@ components:
     properties:
       background: theme:Deep Purple
       display_mode: zoom_to_fill
-      height: 380.402587890625
+      height: '360'
       horizontal_align: right
       margin: [13, null, null, '0']
       source: _/theme/PalpantLogo.jpeg
     type: Image
   layout_properties: {full_width_row: true, grid_position: 'XZPHAS,XYCIVG'}
   name: column_panel_1
-  properties: {col_widths: '{"EBEWJN":40,"HLSXFM":20}'}
+  properties: {col_widths: '{"EBEWJN":45,"HLSXFM":15}'}
   type: ColumnPanel
 - layout_properties: {full_width_row: true, grid_position: 'CPTYVR,XGDYPB'}
   name: spacer_1

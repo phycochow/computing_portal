@@ -1,13 +1,21 @@
 components:
-- layout_properties: {grid_position: 'OYGPLP,EGUJKC'}
+- layout_properties: {full_width_row: true, grid_position: 'LQXUCV,MDAXVP'}
+  name: rich_text_1_copy
+  properties: {content: '# Introduction to EpiCops'}
+  type: RichText
+- layout_properties: {full_width_row: true, grid_position: 'OYGPLP,EGUJKC'}
   name: image_1
-  properties: {display_mode: fill_width, height: 81.88311767578125}
+  properties:
+    display_mode: fill_width
+    height: 81.88311767578125
+    margin: [null, '100', null, '100']
+    source: _/theme/EpiCop_Intro.png
   type: Image
-- layout_properties: {grid_position: 'HCHUHO,TCPYBV'}
+- layout_properties: {full_width_row: true, grid_position: 'HCHUHO,TCPYBV'}
   name: rich_text_1_copy_3_copy
   properties:
     align: left
-    content: "Epigenetically Co-modulated Patterns (EpiCops) are unique chromatin state patterns observed across a wide variety of human tissues and cell types. These patterns are genome-wide, low-dimensional representations of chromatin states, derived from seven key histone modifications (H3K4me1, H3K4me3, H3K27me3, H3K27ac, H3K9me3, H3K9ac, and H3K36me3) and DNase I hypersensitivity (highlighting open chromatin regions). The source data, encompassing 833 distinct tissue and cell types sourced from the EpiMap Epigenomic Consortium, offer a comprehensive view of chromatin dynamics under different biological conditions.\n\nTo identify these patterns, we employed a machine-learning (ML), feature extraction method based on the Restricted Boltzmann Machine (RBM) model for its interpretability. This resulted in 720 epigenetic patterns that can be linked back to the original EpiMap annotations in a straightforward manner, exceeding most black-box ML methods. \n\nEpiCops effectively capture genomic information that are biologically relevant. Our findings show their connections to a broad range of biological processes and disease pathways. EpiCops can identify regulatory elements with key insights into the genetic architecture underlying cell identity and disease mechanisms. These insights are invaluable for pinpointing therapeutic targets and developing a genetic explanation for the molecular cause of complex diseases. Together, EpiCops acts as a powerful tool for understanding the cellular and disease states in an unsupervised manner.\n\n(•\tNote to self A overall heatmap figure of epicop weights by tissue OR use the summary slidedeck - ChrisC)"
+    content: "Epigenetically Co-modulated Patterns (EpiCops) are unique chromatin state patterns observed across a wide variety of human tissues and cell types. These patterns are genome-wide, low-dimensional representations of chromatin states, derived from seven key histone modifications (H3K4me1, H3K4me3, H3K27me3, H3K27ac, H3K9me3, H3K9ac, and H3K36me3) and DNase I hypersensitivity (highlighting open chromatin regions). The source data, encompassing 833 distinct tissue and cell types sourced from the EpiMap Epigenomic Consortium, offer a comprehensive view of chromatin dynamics under different biological conditions.\n\nTo identify these patterns, we employed a machine-learning (ML), feature extraction method based on the Restricted Boltzmann Machine (RBM) model for its interpretability. This resulted in 720 epigenetic patterns that can be linked back to the original EpiMap annotations in a straightforward manner, exceeding most black-box ML methods. \n\nEpiCops effectively capture genomic information that are biologically relevant. Our findings show their connections to a broad range of biological processes and disease pathways. EpiCops can identify regulatory elements with key insights into the genetic architecture underlying cell identity and disease mechanisms. These insights are invaluable for pinpointing therapeutic targets and developing a genetic explanation for the molecular cause of complex diseases. Together, EpiCops acts as a powerful tool for understanding the cellular and disease states in an unsupervised manner."
   type: RichText
 - layout_properties: {grid_position: 'AMCVBZ,YDKDEK'}
   name: spacer_1_copy
@@ -16,7 +24,7 @@ components:
 - components: []
   layout_properties: {full_width_row: true, grid_position: 'ZWPICZ,HCDGNV'}
   name: rich_text_1
-  properties: {content: '## Epigenetics - But Why?'}
+  properties: {content: '# Epigenetics - But Why?'}
   type: RichText
 - layout_properties: {full_width_row: true, grid_position: 'JYCSCY,GQWJPB'}
   name: rich_text_1_copy_2
@@ -32,7 +40,7 @@ components:
   type: Spacer
 - layout_properties: {full_width_row: true, grid_position: 'JCHOKY,HTETGB'}
   name: rich_text_1_copy_3_copy_2
-  properties: {content: '## EpiCops Can Help With Analysing Your Data'}
+  properties: {content: '# EpiCops Can Help You With Analysing Data'}
   type: RichText
 - layout_properties: {full_width_row: true, grid_position: 'RDZPDZ,BSFRAE'}
   name: rich_text_1_copy_3_copy_copy

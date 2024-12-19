@@ -2,7 +2,7 @@ components:
 - components: []
   layout_properties: {full_width_row: true, grid_position: 'ECBVMO,DOQPDA'}
   name: rich_text_1
-  properties: {content: '## Data Server for >300 Published hiPSC-CM Differentiation and Maturation Protocols'}
+  properties: {content: '# Data Server for >300 Published hiPSC-CM Differentiation and Maturation Protocols'}
   type: RichText
 - components:
   - layout_properties: {full_width_row: true, grid_position: 'FYYZPP,QEKHDP'}
