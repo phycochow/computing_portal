@@ -2,32 +2,51 @@
 
 <div class="structure">
   <div class="app-bar" anvil-drop-container=".anvil-container" anvil-drop-redirect=".placeholder">
-    <a class="sidebar-toggle" anvil-if-slot-empty="top-left-btn" anvil-hide-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn" href="javascript:void(0)"><i class="fa fa-bars"></i></a>
-    <a class="sidebar-toggle anvil-designer-only" anvil-if-slot-empty="top-left-btn" anvil-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn"><i class="fa fa-blank"></i></a>
+    <a class="sidebar-toggle" anvil-if-slot-empty="top-left-btn" anvil-hide-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn" href="javascript:void(0)">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a class="sidebar-toggle anvil-designer-only" anvil-if-slot-empty="top-left-btn" anvil-if-slot-empty="left-nav" anvil-drop-slot="top-left-btn">
+      <i class="fa fa-blank"></i>
+    </a>
     <div class="top-left-btn" anvil-slot="top-left-btn"></div>
 
     <div class="nav-bar-left" anvil-slot="nav-left">
-        <div class="placeholder anvil-designer-only" anvil-if-slot-empty="nav-left" anvil-drop-here>Drop a left here</div>
+      <div class="placeholder anvil-designer-only" anvil-if-slot-empty="nav-left" anvil-drop-here>Drop a left here</div>
     </div>
-      
+
     <div class="nav-bar-right" anvil-slot="nav-right">
       <div class="placeholder anvil-designer-only" anvil-if-slot-empty="nav-right" anvil-drop-here>Drop a FlowPanel here</div>
     </div>
-    <div style="clear:both"></div>
+    <div style="clear: both"></div>
   </div>
 
   <div class="nav-holder">
-    <div class="left-nav anvil-measure-this" anvil-slot-repeat="left-nav" anvil-drop-container=">.anvil-container">
-    </div>
+    <div class="left-nav anvil-measure-this" anvil-slot-repeat="left-nav" anvil-drop-container=">.anvil-container"></div>
+    
     <div class="left-nav-placeholder anvil-designer-only" anvil-if-slot-empty="left-nav" anvil-drop-slot="left-nav">
       <div class="prompt">To add a sidebar, drop a ColumnPanel here.</div>
     </div>
-    
+
     <div class="content">
       <div anvil-slot-repeat="default" class="anvil-measure-this"></div>
-      <div class="placeholder drop-here" anvil-if-slot-empty="default" anvil-drop-slot="default">Drop a ColumnPanel here.</div>
+      <div class="placeholder drop-here" anvil-if-slot-empty="default" anvil-drop-slot="default">
+        Drop a ColumnPanel here.
+      </div>
+      
+      <!-- Footer at the bottom of the content -->
+      <div class="m3-footer">
+        <span>&copy; 2025 Your Organization. All rights reserved.</span>
+        <div>
+          <a href="https://example.com/terms" target="_blank">Terms</a>
+          <a href="https://example.com/privacy" target="_blank">Privacy</a>
+          <a href="https://example.com/contact" target="_blank">Contact</a>
+        </div>
+      </div>
+
     </div>
   </div>
+</div>
+
 
   <div class="nav-shield"></div>
 </div>
