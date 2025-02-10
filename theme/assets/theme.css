@@ -1081,23 +1081,6 @@ div.plot-container.plotly svg.main-svg {
     align-items: center;
 }
 
-/* Material 3 Footer */
-.m3-footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--md-sys-color-surface-container);
-    color: var(--md-sys-color-on-surface);
-    padding: 12px 16px;
-    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.2);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-}
-
 /* Material 3 Footer (Non-Sticky) */
 .m3-footer {
     width: 100%;
